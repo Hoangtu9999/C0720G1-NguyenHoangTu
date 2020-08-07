@@ -1,34 +1,94 @@
 <html>
+  <header>
+    <title>form-dang-ky</title>
+  </header>
 <body>
+<style>
+fieldset{
+  width: 400px;
+  background-color: yellow;
+}
+h3{
+  background-color: turquoise;
+  color: blue;
+}
+label{
+  padding-top: 10px;
 
+}
+.pad{
+  padding-top: 10px;
+
+}
+.sub{
+  padding-left: 98px;
+  padding-top: 10px;
+}
+.input{
+  padding-right: 100px;
+  width: 200px;
+  float: right;
+}
+</style>
 
 <form action="">
-
+  <fieldset>
     <h3 >ĐĂNG KÍ HỌC VIÊN</h3>
-
-    <p>Họ và tên <input type="text" name="yourname"></p>
-    <p>Ngày sinh <input type="text" name="birthday"></p>
-    <p>Giới tính 
+    <div class="pad">
+      <label>Họ và tên </label>
+      <div class="input">
+        <input type="text" name="yourname">
+      </div> 
+    </div>
+    <div class="pad">
+      <label>Ngày sinh </label>
+      <div class="input">
+        <input type="text" name="birthday">
+      </div>
+    </div>
+    <div class="pad">
+    <label>Giới tính </label>
+    <div class="input">
       <input type="radio" name="male">Nam
       <input type="radio" name="female">Nữ
-    </p>
-    <a>Địa chỉ
-      <textarea name="" id="" cols="30" rows="10"></textarea>
-    </a>
-    <p>Lớp
-      <select name="" id="">
-        <option value="">--Chọn lớp--</option>
-        <option value="">C0720G1</option>
-        <option value="">C0720G2</option>
-      </select>
-    </p>
-    <p>Email <input type="text" name="email"></p>
-    <p>Điện thoại <input type="text" name="phone"></p>
-    <div style="padding-left: 57px;">
+    </div>
+      
+    </div>
+    <div class="pad">
+      <label>Địa chỉ</label> 
+      <div class="input">
+        <textarea name="" id="" cols="30" rows="10"></textarea> 
+      </div>
+      <br> <br> <br><br><br> <br><br><br> <br>
+    </div>
+    <div class="pad">
+      <label>Lớp</label> 
+      <div class="input">
+        <select name="" id="">
+          <option value="">--Chọn lớp--</option>
+          <option value="">C0720G1</option>
+          <option value="">C0720G2</option>
+        </select>
+      </div>
+    </div>
+    <div class="pad">
+      <label>Email </label>
+      <div class="input">
+        <input type="text" name="email"> 
+      </div>   
+    </div>
+    <div class="pad">
+      <label>Điện thoại </label>
+      <div class="input">
+        <input type="text" name="phone">
+      </div>
+      </div>
+      
+    <div class="sub">
       <input type="submit" value="Gửi thông tin">
       <input type="reset" value="Nhập lại">
     </div>
-
+  </fieldset>
 </form>
 </body>
 </html>

@@ -1,17 +1,33 @@
 <html>
+  <header>
+    <title>form-co-ban</title>
+  </header>
 <body>
-
-
+  <style>
+    fieldset{
+      width: 400px;
+      background-color: turquoise;
+    }
+    h3{
+      
+      background-color: coral;
+      text-align: center;
+    }
+    #boder{
+      background-color: white;
+    }
+  </style>
 <form action="">
-  
   <fieldset >
+    <div id="boder">
   <div>
-    <h3 style="color: red;" >SỞ THÍCH CỦA BẠN</h3>
+    <h3 >SỞ THÍCH CỦA BẠN</h3>
   </div>
   <div>
     <p>Họ và tên <input type="text" ></p>
-    <p>Email <input type="text"></p>
-    <div>Sở thích
+    <p>Email &nbsp; &nbsp; &nbsp; <input type="text"></p>
+    <div>
+      Sở thích
       <a style="color: sandybrown;"><input type="checkbox" name="hobby">Thể thao
         <input type="checkbox"  name="hobby">Âm nhạc
         <input type="checkbox"  name="hobby">Đọc sách
@@ -27,11 +43,12 @@
       </p>      
     </div>
   </div>
-  <div style="padding-left: 57px; color: sandybrown;">
+  <div style="padding-left: 57px; color: sandybrown; padding-bottom: 5px;">
     <input type="submit" value="Gửi thông tin">
     <input type="submit" value="Nhập lại">
   </div>
 </fieldset>
+</div>
 </form>
 </body>
 </html>
