@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai-tap</title>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <form action="">
+        <label for="amout"> Amout</label>
+        <input type="text" id="amout" name = "amout" >
+
+        <label for="fromCurrency">From Currency</label>
+        <select name="fromCurrency" id="fromCurrency">
+            <option value="VNĐ">VNĐ</option>
+            <option value="USA">USA</option>
+        </select>
+
+        <label for="toCurrency">From Currency</label>
+        <select name="toCurrency" id="toCurrency">
+            <option value="USA">USA</option>
+            <option value="VNĐ">VNĐ</option>
+        </select>
+
+        <input type="button" value="convert" onclick="convert();">
+    </form>
+    <p id ="shows"></p>
+</body>
+</html>
