@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task-1</title>
+</head>
+<body>
+
+<button type="button" onclick="demo();">Click me</button>
+
+<script>
+    function demo() {
+        let name = prompt("Họ tên:");
+        let identityCard = prompt("Số CMND:");
+        let dateOfBirth = prompt("Ngày tháng năm sinh:");
+        let email = prompt("Email:");
+        let address = prompt("Địa chỉ:");
+        let customer = prompt("Loại khách hàng:");
+        let discount = prompt("Giảm giá:");
+        let quantityIncluded = prompt("Số người đi kèm:");
+        let numberOfRentalDays = prompt("Số ngày thuê:");
+        let typeOfService = prompt("Loại dịch vụ:");
+        let typeOfRoomToRent = prompt("Loại phòng thuê:");
+
+
+        let price = 0;
+        if(typeOfService  == "villa")
+            price = 500 * numberOfRentalDays * (1 - discount/100)
+        else if (typeOfService == "house")
+            price = 300 * numberOfRentalDays * (1 - discount/100)
+        else if(typeOfService  == "room")
+            price = 100 * numberOfRentalDays * (1 - discount/100)
+
+
+        alert("Họ tên: " +name +"\n"
+            + "Số CMND: " + identityCard + "\n"
+            + "Ngày tháng năm sinh: " + dateOfBirth + "\n"
+            + "Email: " + email + +"@gmail.com" + "\n"
+            + "Địa chỉ: " + address + "\n"
+            + "Loại khách hàng: " + customer + "\n"
+            + "Giảm giá: " + discount + "%" + "\n"
+            + "Số người đi kèm: " + quantityIncluded + "\n"
+            + "Số ngày thuê: " + numberOfRentalDays + "\n"
+            + "Loại dịch vụ: " + typeOfService + "\n"
+            + "Loại phòng thuê: " + typeOfRoomToRent + "\n"
+            + "Số tiền phải trả: " + price +"$"
+        )
+
+    }
+</script>
+</body>
+</html>

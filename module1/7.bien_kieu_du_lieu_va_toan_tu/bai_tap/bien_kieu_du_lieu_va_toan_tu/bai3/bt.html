@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>bai-tap-3</title>
-    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
     <button type="button" onclick="demo();">Click me!</button>
+    <script>
+        function demo() {
+            let inputR = prompt("Nhập R:");
+
+            let R = parseFloat(inputR);
+
+            let P = 3.14;
+
+            let S = (R * R) * P;
+
+            document.write("Diện tích:" +S);
+        }
+    </script>
 </body>
 </html>

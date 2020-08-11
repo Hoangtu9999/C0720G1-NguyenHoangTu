@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Bai-tap</title>
-    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
     <button type="button" onclick="demo();"> Click me!</button>
+    <script>
+        function demo() {
+            let inputWidth;
+            let inputHeight;
+
+            inputWidth = prompt("Enter the width");
+            inputHeight = prompt("Enter the height");
+
+            let width = parseInt(inputWidth);
+            let height = parseInt(inputHeight);
+
+            let area = width * height;
+            document.write("The area is: " + area);
+        }
+    </script>
 </body>
 </html>

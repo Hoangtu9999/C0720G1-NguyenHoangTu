@@ -3,10 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Bai-tap-1</title>
-    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
 <button type="button" onclick="demo();">Click để nhập điểm!</button>
 
+<script>
+    function demo() {
+        let inputVatLy = prompt("Nhập điểm vật lý");
+        let inputHoaHoc = prompt("Nhập điểm hóa ");
+        let inputSinhHoc = prompt("Nhập điểm sinh");
+
+        let vatLy = parseFloat(inputVatLy);
+        let hoaHoc = parseFloat(inputHoaHoc);
+        let sinhHoc = parseFloat(inputSinhHoc);
+
+        let dtb = (vatLy + hoaHoc + sinhHoc) /3;
+
+        document.write("Điểm trung bình:" + dtb);
+    }
+</script>
 </body>
 </html>
