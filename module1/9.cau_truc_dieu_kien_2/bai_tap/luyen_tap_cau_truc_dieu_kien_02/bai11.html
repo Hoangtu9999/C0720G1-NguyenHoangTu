@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai-tap</title>
+</head>
+<body>
+    <script>
+        let luong = parseInt(prompt("Nhập lương:"));
+        let nguoiGiamTru = parseInt(prompt("Nhập số người giảm trừ:"));
+
+        let thue = 0;
+
+        if(luong > 9000){
+            thue = (luong - 9000 - (nguoiGiamTru*3500))*10/100;
+            alert("Số tiền phải nộp là:" +thue);
+        }else{
+            alert("Bạn không cần phải đóng thuế vì bạn quá nghèo");
+        }
+    </script>
+</body>
+</html>

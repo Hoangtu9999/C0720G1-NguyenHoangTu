@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai-tap</title>
+</head>
+<body>
+<script>
+    let kWh = parseFloat(prompt("Nhập số kWh đã sử dụng:"));
+    let tien = 0;
+    if(kWh > 50){
+        tien = kWh * 1549;
+    }else if(kWh < 100){
+        tien = kWh * 1600;
+    }else if(kWh < 200){
+        tien = kWh * 1858;
+    }else if(kWh < 300){
+        tien = kWh * 2340;
+    }else if(kWh < 400){
+        tien = kWh * 2615;
+    }else if(kWh > 400) {
+        tien = kWh * 2701;
+    }
+
+    alert("Bạn đã sử dụng " + kWh + " kWh và số tiền phải trả là " + tien +" Đ");
+</script>
+</body>
+</html>

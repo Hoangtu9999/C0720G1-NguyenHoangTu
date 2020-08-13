@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai-tap</title>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt("Nhập số a:"));
+        let b = parseInt(prompt("Nhập số b:"));
+        let c = parseInt(prompt("Nhập số c:"));
+
+        let x1 = 0;
+        let x2 = 0;
+        let x = 0;
+
+        let d =(b*b)-4*a*c;
+
+        if(d == 0) {
+            x = -b / (2 * a)
+            alert("Phương trình có nghiệm kép:" + x );
+        }else if(d > 0){
+            x1 = (-b - Math.sqrt(d)) / (2*a);
+            x2 = (-b + Math.sqrt(d)) / (2*a);
+            alert("Phương trình có 2 nghiệm phân biệt : " + "\n"
+                + "x1 = " + x1 + "\n"
+                + "x2 = " + x2 );
+        }else if(d < 0){
+            alert("Phương trình vô nghiệm");
+        }
+
+    </script>
+</body>
+</html>

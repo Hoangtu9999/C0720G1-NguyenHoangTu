@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai-tap</title>
+</head>
+<body>
+    <script>
+        let soPhut = parseFloat(prompt("Nhập số phút :"));
+        let phiCoDinh = 25;
+        let tongTien = 0 ;
+        let phi = 0;
+        if(soPhut > 200){
+            phi = (soPhut -200) *200 + 150 * 400 + 50 *600;
+        }else if(soPhut > 50 ){
+            phi = (soPhut - 50) *400 + 50 * 600 ;
+        }else{
+            phi = soPhut*600;
+        }
+        tongTien = 0.01 + phi + phiCoDinh ;
+        alert("Bạn đã gọi " + soPhut + " số tiền phải trả là " + tongTien + "Đ");
+
+        // Phí thuê bao bắt buộc là 25 nghìn.
+        // 600 đồng cho mỗi gọi của 50 phút đầu tiên.
+        // 400 đồng cho mỗi phút gọi của 150 phút tiếp theo.
+        // 200 đồng cho bất kỳ mỗi phút nào sau 200 phút đầu tiên.
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai-tap</title>
+</head>
+<body>
+    <script>
+        let baiKiemTra = parseFloat(prompt("Nhập điểm kiểm tra:"));
+        let diemGiuaKi = parseFloat(prompt("Nhập điểm giữa kì:"));
+        let diemCuoiKi = parseFloat(prompt("Nhập điểm thi:"));
+
+        let dtb = (baiKiemTra + diemGiuaKi * 2 + diemCuoiKi * 3) / 6 ;
+        dtb = dtb.toFixed(2);
+
+        if(dtb >= 8.0){
+            alert(dtb + " Giỏi");
+        }else if(dtb >= 6.5){
+            alert(dtb +" Khá");
+        }else if(dtb >= 5){
+            alert(dtb + " Trung bình");
+        }else{
+            alert(dtb + " Yếu");
+        }
+    </script>
+</body>
+</html>

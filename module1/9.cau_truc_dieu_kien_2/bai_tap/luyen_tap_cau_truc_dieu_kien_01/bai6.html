@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai-tap</title>
+</head>
+<body>
+    <script>
+        let money = parseInt(prompt("Nhập số doanh thu:"));
+        let rose = 0;
+        if(money <= 100){
+            rose = money * 5/100;
+            alert("Số tiền hoa hồng nhận được là: " + rose + "$");
+        }else if(money <= 300){
+            rose = money * 10/100;
+            alert("Số tiền hoa hồng nhận được là: " + rose + "$");
+        }else if(money < 700){
+            rose = money * 20/100;
+            alert("Số tiền hoa hồng nhận được là: " + rose + "$");
+        }else if(money > 1000){
+            rose = money * 30/100;
+            alert("Số tiền hoa hồng nhận được là: " + rose + "$");
+        }
+    </script>
+</body>
+</html>
