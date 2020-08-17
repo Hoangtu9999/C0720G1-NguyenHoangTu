@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai-tap</title>
+</head>
+<body>
+    <script>
+        let input = parseInt(prompt("Nhập n:"));
+
+        let temp = 1;
+        let giaiThua =1 ;
+        while ((input <= 0) ){
+            alert("Nhập lại đi nào");
+        }
+        while(temp <= input){
+            giaiThua *= temp;
+            temp ++;
+        }
+        alert(input + " ! = " + giaiThua);
+    </script>
+</body>
+</html>

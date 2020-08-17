@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai-tap</title>
+</head>
+<body>
+    <script>
+        debugger
+        let n1 = parseInt(prompt("Nhập n1:"));
+        for(let i = 1; i <= n1; i++) {
+            for(let k = 1; k <= i; k++) {
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+
+        let n2  = parseInt(prompt("Nhập n2:"));
+        for(let i = 1; i <= n2; i++) {
+            for(let k = 1; k <= n2 - i; k++) {
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+
+        let n3 = parseInt(prompt("Nhập n3:"));
+        for(let i = 1; i <= n3; i++) {
+            for(let k = 1; k <=n3-i; k++) {
+                document.write("&nbsp;&nbsp;");
+            }
+            for (let j=1;j <= i;j++){
+                document.write("*");
+            }
+
+            document.write("<br>");
+        }
+        let n4 = parseInt(prompt("Nhập n4:"));
+        for(let i = 1; i <= n4; i++) {
+            for(let k = 1; k <= i; k++) {
+                document.write("&nbsp;&nbsp;");
+            }
+            for (let j=1;j <= n4 - i;j++){
+                document.write("*");
+            }
+
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>

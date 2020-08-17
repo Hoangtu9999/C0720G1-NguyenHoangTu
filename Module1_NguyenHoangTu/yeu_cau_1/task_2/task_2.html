@@ -24,13 +24,13 @@
 
 
         let price = 0;
-        if(typeOfService  == "villa")
-            price = 500 * numberOfRentalDays * (1 - discount/100)
-        else if (typeOfService == "house")
-            price = 300 * numberOfRentalDays * (1 - discount/100)
-        else if(typeOfService  == "room")
-            price = 100 * numberOfRentalDays * (1 - discount/100)
-
+        if(typeOfService  == "villa"){
+            price = 500 * numberOfRentalDays * (1 - discount/100);
+        }else if (typeOfService == "house"){
+            price = 300 * numberOfRentalDays * (1 - discount/100);
+        }else if(typeOfService == "room"){
+            price = 100 * numberOfRentalDays * (1 - discount / 100);
+        }
 
         alert("Họ tên: " +name +"\n"
             + "Số CMND: " + identityCard + "\n"

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai-tap</title>
+</head>
+<body>
+    <script>
+        let number = parseInt(prompt("Nhập :"));
+        if(number <= 0){
+            alert("Hãy nhập số dương");
+        }else {
+            let count = 0;
+            let m = 2;
+            while(count < number){
+                let mark = 1 ;
+                for (let i = 2 ; i <= Math.sqrt(m); i++){
+                    if(m % i == 0){
+                        mark = 0;
+                        break ;
+                    }
+                }
+                if(mark == 1){
+                    count++;
+                   document.write(" " + m);
+                }
+                if(count >= number){
+                    break;
+                }
+                m++;
+            }
+        }
+
+    </script>
+</body>
+</html>

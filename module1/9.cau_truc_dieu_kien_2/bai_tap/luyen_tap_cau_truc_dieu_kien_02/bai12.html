@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai-tap</title>
+</head>
+<body>
+
+<script>
+    let money = parseInt(prompt("Nhập tiền muốn gửi:"));
+    let month = parseFloat(prompt("Nhập số tháng muốn gửi:"));
+    let sum = 0;
+    let ve_sau = money ;
+    let interestRate = 0;
+    for (let i = 1 ; i <= month ; i++){
+        interestRate =  6/100*ve_sau;
+        ve_sau = ve_sau + interestRate ;
+        console.log("tổng tiền sau tháng " + i + " là :" + ve_sau );
+    }
+
+</script>
+</body>
+</html>

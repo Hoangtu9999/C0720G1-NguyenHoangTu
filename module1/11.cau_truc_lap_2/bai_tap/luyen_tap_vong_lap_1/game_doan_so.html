@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>game-doan-so</title>
+</head>
+<body>
+<input type="button" onclick="doanSo();" value="Let Go">
+    <script>
+        function doanSo() {
+            let starNumber = parseInt(prompt("Nhập số đầu tiên:"));
+            let endNumber = parseInt(prompt("Nhập số cuối:"));
+            let  r = Math.ceil((endNumber - starNumber) * Math.random() + starNumber);
+            for(let i = 0 ; i < 3 ; i++){
+                let input = parseInt(prompt("Nhập số bạn muốn đoán"));
+                if (input == r){
+                    alert("Bạn đã đoán đúng");
+                    break;
+                }else if(input < r){
+                    alert("Lớn hơn rồi Đoán lại nào");
+                }else{
+                    alert("Nhỏ hơn rồi Đoán lại nào");
+                }
+            }
+        }
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

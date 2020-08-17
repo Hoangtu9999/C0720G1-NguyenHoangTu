@@ -30,118 +30,15 @@
                 + "7.Loại khách hàng:" + customer + "\n"
                 + "8.Địa chỉ:" + address );
         }
-        function edit() {
-            let edit = parseInt(prompt("1.Họ tên: " + name + "\n"
-                + "2.Ngày tháng năm sinh: " + dayOfBirth + "\n"
-                +"3.Giới tính:" + gender + "\n"
-                + "4.Số CMND: " + identityCard + "\n"
-                + "5.Số điện thoại: " + phone + "\n"
-                + "6.Email: "  + email + "\n"
-                + "7.Loại khách hàng:" + customer + "\n"
-                + "8.Địa chỉ:" + address ));
-            switch (edit) {
-                case 1 :
-                    name = prompt("Nhập tên cần sửa:");
-                    confirm("1.Họ tên: " + name + "\n"
-                        + "2.Ngày tháng năm sinh: " + dayOfBirth + "\n"
-                        +"3.Giới tính:" + gender + "\n"
-                        + "4.Số CMND: " + identityCard + "\n"
-                        + "5.Số điện thoại: " + phone + "\n"
-                        + "6.Email: "  + email + "\n"
-                        + "7.Loại khách hàng:" + customer + "\n"
-                        + "8.Địa chỉ:" + address );
-                    break;
-                case 2 :
-                    dayOfBirth = prompt("Nhập ngày tháng năm sinh:");
-                    confirm("1.Họ tên: " + name + "\n"
-                        + "2.Ngày tháng năm sinh: " + dayOfBirth + "\n"
-                        +"3.Giới tính:" + gender + "\n"
-                        + "4.Số CMND: " + identityCard + "\n"
-                        + "5.Số điện thoại: " + phone + "\n"
-                        + "6.Email: "  + email + "\n"
-                        + "7.Loại khách hàng:" + customer + "\n"
-                        + "8.Địa chỉ:" + address );
-                    break;
-                case 3 :
-                    gender = prompt("Nhập lại giới tính:");
-                    confirm("1.Họ tên: " + name + "\n"
-                        + "2.Ngày tháng năm sinh: " + dayOfBirth + "\n"
-                        +"3.Giới tính:" + gender + "\n"
-                        + "4.Số CMND: " + identityCard + "\n"
-                        + "5.Số điện thoại: " + phone + "\n"
-                        + "6.Email: "  + email + "\n"
-                        + "7.Loại khách hàng:" + customer + "\n"
-                        + "8.Địa chỉ:" + address );
-                    break;
-                case 4 :
-                    identityCard = prompt("Nhập CMND cần sửa:");
-                    confirm("1.Họ tên: " + name + "\n"
-                        + "2.Ngày tháng năm sinh: " + dayOfBirth + "\n"
-                        +"3.Giới tính:" + gender + "\n"
-                        + "4.Số CMND: " + identityCard + "\n"
-                        + "5.Số điện thoại: " + phone + "\n"
-                        + "6.Email: "  + email + "\n"
-                        + "7.Loại khách hàng:" + customer + "\n"
-                        + "8.Địa chỉ:" + address );
-                    break;
-                case 5 :
-                    phone = prompt("Nhập tên cần sửa:");
-                    confirm("1.Họ tên: " + name + "\n"
-                        + "2.Ngày tháng năm sinh: " + dayOfBirth + "\n"
-                        +"3.Giới tính:" + gender + "\n"
-                        + "4.Số CMND: " + identityCard + "\n"
-                        + "5.Số điện thoại: " + phone + "\n"
-                        + "6.Email: "  + email + "\n"
-                        + "7.Loại khách hàng:" + customer + "\n"
-                        + "8.Địa chỉ:" + address );
-                    break;
-                case 6 :
-                    email = prompt("Nhập email cần sửa:");
-                    confirm("1.Họ tên: " + name + "\n"
-                        + "2.Ngày tháng năm sinh: " + dayOfBirth + "\n"
-                        +"3.Giới tính:" + gender + "\n"
-                        + "4.Số CMND: " + identityCard + "\n"
-                        + "5.Số điện thoại: " + phone + "\n"
-                        + "6.Email: "  + email + "\n"
-                        + "7.Loại khách hàng:" + customer + "\n"
-                        + "8.Địa chỉ:" + address );
-                    break;
-                case 7 :
-                    customer = prompt("Nhập customer cần sửa:");
-                    confirm("1.Họ tên: " + name + "\n"
-                        + "2.Ngày tháng năm sinh: " + dayOfBirth + "\n"
-                        +"3.Giới tính:" + gender + "\n"
-                        + "4.Số CMND: " + identityCard + "\n"
-                        + "5.Số điện thoại: " + phone + "\n"
-                        + "6.Email: "  + email + "\n"
-                        + "7.Loại khách hàng:" + customer + "\n"
-                        + "8.Địa chỉ:" + address );
-                    break;
-                case 8 :
-                    address = prompt("Nhập địa chỉ cần sửa:");
-                    confirm("1.Họ tên: " + name + "\n"
-                        + "2.Ngày tháng năm sinh: " + dayOfBirth + "\n"
-                        +"3.Giới tính:" + gender + "\n"
-                        + "4.Số CMND: " + identityCard + "\n"
-                        + "5.Số điện thoại: " + phone + "\n"
-                        + "6.Email: "  + email + "\n"
-                        + "7.Loại khách hàng:" + customer + "\n"
-                        + "8.Địa chỉ:" + address );
-                    break;
 
-                default:
-                    alert("vui lòng nhập từ 1 - 8");
-                    break;
-            }
-        }
+
         //main
         switch (input) {
             case 1 :
                 show();
                 break;
             case 2:
-                edit();
-                break;
+
             default:
                 alert("Failed");
                 break;

@@ -8,13 +8,16 @@
 <script>
 
     let name = "Nguyễn Hoàng Tứ";
-    let dayOfBirth = "24-06-1999";
+    let dayOfBirth = "1999";
     let gender = "Nam";
     let identityCard = "206333777";
     let phone ="0857886264";
     let email = "nguyenhoangtu24061999@gmail.com";
-    let customer = "Gold"
-    let address = "Thăng Bình - Quảng Nam";
+    let customer = "Gold";
+    let address = "Quảng Nam";
+    let typeOfService = "villa";
+    let numberOfRentalDays = 5;
+    let discount = 15;
 
     let input = parseInt(prompt("1.Show Information Customer" + "\n"
         +"2.Edit Information Customer." + "\n"
@@ -28,7 +31,9 @@
             + "5.Số điện thoại: " + phone + "\n"
             + "6.Email: "  + email + "\n"
             + "7.Loại khách hàng:" + customer + "\n"
-            + "8.Địa chỉ:" + address );
+            + "8.Địa chỉ:" + address + "\n"
+            + "9.Địa chỉ:" + address
+        );
     }
     function edit() {
         let edit = parseInt(prompt("1.Họ tên: " + name + "\n"
@@ -134,6 +139,56 @@
                 break;
         }
     }
+    
+    function money() {
+        //số tiền chưa được giảm
+        let price = 0;
+        if(typeOfService  == "villa"){
+            price = 500 * numberOfRentalDays * (1 - discount/100);
+        }else if (typeOfService == "house"){
+            price = 300 * numberOfRentalDays * (1 - discount/100);
+        }else if(typeOfService == "room"){
+            price = 100 * numberOfRentalDays * (1 - discount / 100);
+        }
+        //giảm tiền vs điều kiện địa chỉ
+        if(address == "Đà Nẵng"){
+            price -= 20 ;
+        }else if(address == "Huế"){
+            price -= 10;
+        }else if(address == "Quảng Nam"){
+            price -= 5;
+        }
+        //giảm tiền vs điều kiện số ngày ở
+        if(numberOfRentalDays > 2 && numberOfRentalDays < 4){
+            price -= 10;
+        }else if(numberOfRentalDays < 7){
+            price -= 20;
+        }else if(numberOfRentalDays > 7){
+            price -= 30;
+        }
+        //giảm tiền vs điều kiện loại khách hàng
+        if(customer == "Diamond "){
+            price -= 15;
+        }else if(customer == "Platium "){
+            price -= 10;
+        }else if(customer == "Gold"){
+            price -= 5;
+        }else if(customer == "Silver "){
+            price -= 2;
+        }else if(customer == "Member "){
+            price = price;
+        }
+        // tính tuổi
+        let birthday = new Date(dayOfBirth).getFullYear();
+        let ageCustomer = (new Date().getFullYear()) - birthday;
+        //giảm tiền vs điều kiện tuổi và địa chỉ
+        if(ageCustomer > 30 && address == "Đà nẵng "){
+            price -= 2 ;
+        }else if(ageCustomer > 20 && ageCustomer < 30 && address == "Quảng Nam"){
+            price -= 1;
+        }
+         alert("Tổng số tiền bạn phải trả sau khi được giảm giá là:" +price);
+    }
     //main
     switch (input) {
         case 1 :
@@ -141,6 +196,9 @@
             break;
         case 2:
             edit();
+            break;
+        case 3 :
+            money();
             break;
         default:
             alert("Failed");
