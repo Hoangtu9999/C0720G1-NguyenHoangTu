@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai-4</title>
+</head>
+<body>
+    <script>
+        let input = parseInt(prompt("Nhập giá trị vào mảng:"));
+        let array = new Array(input);
+        for (let i = 0; i < array.length; i++) {
+            array[i] = prompt("Input a " + i + ": ");
+        }
+        document.write("Mảng chưa đảo ngược:" + array + "<br>");
+        array.reverse();
+        document.write("Mảng đã đảo ngược: "+array);
+    </script>
+</body>
+</html>

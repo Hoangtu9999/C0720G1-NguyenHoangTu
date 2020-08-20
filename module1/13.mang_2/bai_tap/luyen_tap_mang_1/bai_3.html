@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai-2</title>
+</head>
+<body>
+<script>
+    let array = [4,5,12,7,8];
+    let max = 0;
+    let sum = 0;
+    let tb = 0;
+    for(let i = 0 ; i < array.length  ; i++){
+        if(max < array[i]){
+            max = array[i];
+        }
+        sum += array[i];
+        tb = sum / (i+1);
+    }
+    alert("Số lớn nhất trong mãng là: " + max +"\n"
+            +" trung bình của mảng là : " + tb);
+
+</script>
+</body>
+</html>

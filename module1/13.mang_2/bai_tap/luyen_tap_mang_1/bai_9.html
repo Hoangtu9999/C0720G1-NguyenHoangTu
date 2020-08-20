@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai-9</title>
+</head>
+<body>
+    <script>
+        let mang1 = new Array(5);
+        let mang2 = new Array(5);
+        let mang3 = new Array(20);
+        for(let i = 0; i< mang1.length ; i++){
+            mang1[i] = prompt("Nhập phần tử thứ " + (i + 1) + " của mảng 1:");
+        }
+        alert("Mảng 1: " + mang1);
+        for(let i = 0; i< mang2.length ; i++){
+            mang2[i] = prompt("Nhập phần tử thứ " + (i + 1) + " của mảng 2:");
+        }
+        alert("Mảng 2: " + mang2);
+        mang3 = mang1.concat(mang2);
+        alert("Mảng sau khi ghép : " + mang3);
+    </script>
+</body>
+</html>

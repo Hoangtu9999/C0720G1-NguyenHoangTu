@@ -8,7 +8,7 @@
 <script>
 
     let name = "Nguyễn Hoàng Tứ";
-    let dayOfBirth = "1999";
+    let dayOfBirth = "06/24/1999";
     let gender = "Nam";
     let identityCard = "206333777";
     let phone ="0857886264";
@@ -179,8 +179,10 @@
             price = price;
         }
         // tính tuổi
+
         let birthday = new Date(dayOfBirth).getFullYear();
         let ageCustomer = (new Date().getFullYear()) - birthday;
+
         //giảm tiền vs điều kiện tuổi và địa chỉ
         if(ageCustomer > 30 && address == "Đà nẵng "){
             price -= 2 ;

@@ -6,13 +6,19 @@
 </head>
 <body>
     <script>
-        let i ;
+        debugger
+        let i = 0;
         let sum = 0;
-       for(let i = 0; i < 30 ;i++){
-           sum += i;
-       }
-       sum *= 7;
-       document.write(sum);
+        let dem = 0;
+        while(dem <= 29 ){
+            if(i % 7 == 0){
+                dem ++;
+                sum += i;
+            }
+            i++;
+        }
+        document.write(sum);
+
     </script>
 </body>
 </html>

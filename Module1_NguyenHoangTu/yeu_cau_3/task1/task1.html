@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task-1</title>
+</head>
+<body>
+    <script>
+        var input = parseInt(prompt("1.Kiểm tra định dạng email" + "\n"
+            + "2.Kiểm tra định dạng CMND" + "\n"
+            + "3.Kiểm tra định dạng ngày tháng" + "\n"
+            + "4.Kiểm tra giảm giá,số ngày thuê,người đi kèm"
+        ));
+
+            switch (input) {
+                case 1 :
+                    email();
+
+                    break;
+                case 2 :
+                    identityCard();
+                    break;
+                case 3 :
+                    dateOfBirth();
+                    break;
+                case 4 :
+                    check();
+                    break;
+
+                default :
+                    alert("hãy chọn từ 1-3");
+                    break;
+            }
+
+        function email(){
+            let email ;
+            let regEmail =/^\w+@[a-zA-Z]{3,}\.com$/i;
+            let  test = true;
+            do {
+                email = prompt("Nhập email:");
+
+                if(email == "" ){
+                    alert("mời bạn nhập dữ liệu");
+                    test = false;
+                }else if (regEmail.test(email) == true ) {
+                    alert("Bạn đã nhập đúng định dạng");
+                    break;// đúng thoát
+                } else {
+                    alert("bạn đã nhập sai định dạng email mời bạn nhập lại ");
+                    //sai thì gán biến test bằng false
+                    test = false;
+                }
+            }while (!test);
+            
+        }
+        function identityCard() {
+            let identityCard;
+            let  test = true;
+            do {
+                identityCard = prompt("Nhập sô CMND:");
+                if ( identityCard == "") {
+                    alert("mời bạn nhập dữ liệu");
+                    test = false;
+                } else if (isNaN(identityCard) == false && identityCard >= 0 && identityCard.length == 9) {
+                    alert("Bạn đã nhập đúng");
+                    break;// đúng thoát
+                } else {
+                    alert("bạn đã nhập sai định dạng ");
+                    //sai thì gán biến test bằng false
+                    test = false;
+                }
+            } while (!test);
+        }
+        
+        function dateOfBirth() {
+            let dateOfBirth;
+            let  test = true;
+            let regDate = /^\d{1,2}\/\d{1,2}\/\d{4}$/i;
+            do {
+                dateOfBirth = prompt("Nhập ngày sinh:");
+                if ( dateOfBirth == "") {
+                    alert("mời bạn nhập dữ liệu");
+                    test = false;
+                } else if ( regDate.test(dateOfBirth)) {
+                    alert("Bạn đã nhập đúng");
+                    break;// đúng thoát
+                } else {
+                    alert("bạn đã nhập sai định dạng ");
+                    //sai thì gán biến test bằng false
+                    test = false;
+                }
+            } while (!test);
+
+        }
+        function check() {
+            let discount ;
+            let numberOfRentalDays;
+            let quantityIncluded ;
+            let  test = true;
+            do {
+                discount = parseInt(prompt("Nhập giảm giá:"));
+                numberOfRentalDays = parseInt(prompt("Nhập số ngày thuê:"));
+                quantityIncluded = parseInt(prompt("Nhập số người đi kèm:"));
+               if(discount >= 0 && quantityIncluded >= 0 && numberOfRentalDays > 0 ){
+                       alert("Bạn đã nhập đúng");
+                       break;
+                }else {
+                    alert("Bạn hãy nhập lại số nguyên dương nào");
+                    test = false;
+                }
+            }while(!test);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = new Array(5);
+    for(let i = 0; i< array.length ; i++){
+        array[i] = prompt("Nhập phần tử thứ " + (i + 1));
+    }
+    alert("Mảng chưa xóa" + array);
+    let V = prompt("Nhập vào V:");
+    let check = false;
+    for (let i = 0 ; i < array.length  ; i++) {
+        if (array[i] == V) {
+            array.splice(i, 1);
+            check = true;
+            break;
+        }
+    }
+    if(check){
+    alert("Đã xóa V = " + V + "\n"
+    + "Kết quả:" +  array);
+    }else{
+        alert("Không có V = " + V + " trong mãng " + array);
+    }
+</script>
+</body>
+</html>

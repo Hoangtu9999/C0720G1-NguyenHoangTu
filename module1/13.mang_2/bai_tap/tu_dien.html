@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tu-dien</title>
+</head>
+<body>
+<form action="">
+    <input type="text" name="input" id="input">
+    <input type="button" value="Search" onclick="search();">
+</form>
+    <p id="result"></p>
+
+    <script>
+        function search() {
+            let input = document.getElementById("input").value;
+            let array1 =["table","pencil","the dog","doctor"];
+            let array2 = ["cái bàn","bút chì","con chó","bác sĩ"];
+            for (let i = 0 ; i < array1.length ; i++){
+                if(input == array1[i]){
+                    document.getElementById("result").innerHTML = array2[i];
+                }else {
+                    document.getElementById("result").innerHTML = "không tìm thấy";
+                }
+            }
+
+        }
+    </script>
+</body>
+</html>
