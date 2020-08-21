@@ -6,14 +6,21 @@
 </head>
 <body>
     <script>
-        let a = [
-            [1, 2, 1, 24],
-            [8, 11, 9, 4],
-            [7, 0, 7, 27],
-            [7, 4, 28, 14],
-            [3, 10, 26, 7]
-        ];
+        // let a = [
+        //     [1, 2, 1, 24],
+        //     [8, 11, 9, 4],
+        //     [7, 0, 7, 27],
+        //     [7, 4, 28, 14],
+        //     [3, 10, 26, 7]
+        // ];
 
+        let a = new Array(4);
+        for(let i = 0 ; i < a.length; i++){
+            a[i] = new Array(4);
+            for (let j = 0; j < a[i].length ; j ++){
+                a[i][j] = prompt("Nhập vào phần thử thứ" + i +  j + " :")
+            }
+        }
         for (let i in a)
         {
             document.write("row " + i + "<br>");
