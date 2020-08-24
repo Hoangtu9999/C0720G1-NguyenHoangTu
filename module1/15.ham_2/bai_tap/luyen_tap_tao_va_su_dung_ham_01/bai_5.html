@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai-5</title>
+</head>
+<body>
+    <script>
+        let array1 = ["Polaris", "Aldebaran", "Deneb", "Vega","Altair","Dubhe","Regulus"];
+        let array2 = ["Ursa Minor","Tarurus","Cygnus","Lyra","Aquila","Ursa Major","Leo"];
+
+        function bai5() {
+            let tmp;
+            let test = true;
+            do{
+                let input = prompt("Nhập:");
+                for(let i = 0 ; i < array1.length ; i++){
+                    if(input == array1[i]){
+                        alert(array2[i]);
+                        test = false;
+                        }
+                    }
+                }while (test);
+            }
+
+
+
+        bai5();
+    </script>
+</body>
+</html>

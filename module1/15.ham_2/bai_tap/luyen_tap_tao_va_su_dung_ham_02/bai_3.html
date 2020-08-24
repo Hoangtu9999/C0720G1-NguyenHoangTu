@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai-3</title>
+</head>
+<body>
+    <script>
+       function giaiThua(n) {
+        let gt =1 ;
+        for(let i = 1;i<=n;i++){
+            gt *= i;
+        }
+        return gt;
+       }
+
+       let input = parseInt(prompt("Nhập n"));
+       let sum = giaiThua(input);
+        alert(sum);
+
+    </script>
+</body>
+</html>

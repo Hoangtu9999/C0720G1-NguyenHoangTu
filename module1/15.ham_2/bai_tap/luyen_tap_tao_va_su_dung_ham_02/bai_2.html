@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai-2</title>
+</head>
+<body>
+    <script>
+
+        function dienTich(r,pi) {
+            return pi *r*r;
+        }
+        function chuVi(r,pi) {
+            return r*2*pi;
+        }
+
+        let input = parseInt(prompt("Nhập r"));
+        let pi = 3.14;
+        let dt = dienTich(input,pi);
+        let cv = chuVi(input,pi);
+        alert("Diện tích là: "+dt);
+        alert("chu vi là: "+ cv);
+    </script>
+</body>
+</html>

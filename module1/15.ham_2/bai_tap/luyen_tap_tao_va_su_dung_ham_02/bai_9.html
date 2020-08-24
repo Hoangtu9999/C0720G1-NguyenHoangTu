@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai-9</title>
+</head>
+<body>
+    <script>
+        function bai9(a,b) {
+            let count = 0;
+            let tmp = false;
+            for(let i = 0; i < a.length ; i++){
+                if(a[i] == b){
+                    tmp = true;
+                    count++;
+                }
+            }
+            if(tmp){
+                alert("số lần xuất hiện của " + b + " là " + count);
+            }else{
+                alert("-1");
+            }
+        }
+        let a = ['&','&','$','&','g','h','#','g'];
+        let b = '&';
+        bai9(a,b);
+    </script>
+</body>
+</html>

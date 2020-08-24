@@ -6,16 +6,18 @@
 </head>
 <body>
 <script>
-    let array = new Array(5);
+    let array = new Array(6);
     for(let i = 0; i< array.length ; i++){
         array[i] = prompt("Nhập phần tử thứ " + (i + 1));
     }
     alert("Mảng chưa xóa" + array);
     let V = prompt("Nhập vào V:");
     let check = false;
+    debugger
     for (let i = 0 ; i < array.length  ; i++) {
         if (array[i] == V) {
             array.splice(i, 1);
+            i--;
             check = true;
         }
     }

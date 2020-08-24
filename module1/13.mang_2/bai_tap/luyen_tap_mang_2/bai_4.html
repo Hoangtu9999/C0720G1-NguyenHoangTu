@@ -6,10 +6,18 @@
 </head>
 <body>
     <script>
-        let string = "Nguyễn hoàng tứ";
-
-        let count = string.split(" ").length;
-        alert("Số từ trong chuỗi là:" + count);
+        let string = (prompt("Nhập chuỗi").toString());
+        alert(string);
+        let count = 0;
+        if (string[0] !=" ") {
+            count++;
+        }
+        for (let i = 0; i<string.length;i++) {
+            if ((string[i]!= " ")&&(string[i-1] == " ")) {
+                count++
+            }
+        }
+      alert("chuỗi trên có " + count + " từ")
     </script>
 </body>
 </html>

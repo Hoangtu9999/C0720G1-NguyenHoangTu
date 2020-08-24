@@ -9,12 +9,10 @@
         let input = parseInt(prompt("Nhập vào số kí tự trong mảng :"));
         let mang = new Array(input);
         let tg = '_';
-        let count = 0 ;
         for(let i = 0 ; i < mang.length ; i++){
             mang[i] = prompt("Nhập vào phần tử thứ " + (i+1));
             if(mang[i] == '-'){
                  mang[i] = tg;
-               count++;
             }
 
         }

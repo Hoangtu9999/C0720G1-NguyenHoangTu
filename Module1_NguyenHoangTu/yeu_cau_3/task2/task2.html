@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai-tap</title>
+</head>
+<body>
+    <script>
+        let name = prompt("Họ tên:");
+        name = name.trim().toLowerCase();
+        let tempName = "";
+        // let customer = prompt("Loại khách hàng:");
+        // let address = prompt("Địa chỉ:");
+        // let array = new Array(name,customer,address);
+        for(let i = 0; i < name.length ; i++){
+            if(name.charAt(i) === " " && name.charAt(i+1) === " "){
+                continue;
+            }
+            if(i === 0 || name.charAt(i -1 )  === " "){
+                tempName += name.charAt(i).toUpperCase();
+                continue;
+            }
+            tempName += name.charAt(i);
+        }
+        alert(tempName);
+
+
+
+    </script>
+</body>
+</html>
