@@ -6,9 +6,7 @@
 </head>
 <body>
     <script>
-        function bai3() {
-            let a = parseInt(prompt("Nhập a:"));
-            let b = parseInt(prompt("Nhập b:"));
+        function timSoLonHon(a,b) {
             let sum = 0;
             let test = true;
             if(a > b){
@@ -19,8 +17,9 @@
             }
             return sum;
         }
-
-        let result = bai3();
+        let a = parseInt(prompt("Nhập a:"));
+        let b = parseInt(prompt("Nhập b:"));
+        let result = bai3(a,b);
         if(result){
             alert(result);
         }

@@ -9,11 +9,10 @@
         let array1 = ["Polaris", "Aldebaran", "Deneb", "Vega","Altair","Dubhe","Regulus"];
         let array2 = ["Ursa Minor","Tarurus","Cygnus","Lyra","Aquila","Ursa Major","Leo"];
 
-        function bai5() {
+        function timKiemChomSao(a) {
             let tmp;
             let test = true;
             do{
-                let input = prompt("Nhập:");
                 for(let i = 0 ; i < array1.length ; i++){
                     if(input == array1[i]){
                         alert(array2[i]);
@@ -24,8 +23,8 @@
             }
 
 
-
-        bai5();
+        let input = prompt("Nhập:");
+        timKiemChomSao(input);
     </script>
 </body>
 </html>

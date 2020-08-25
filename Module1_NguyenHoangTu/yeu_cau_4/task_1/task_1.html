@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+    let menu = parseInt(prompt("1.Add New Customer" + "\n" + "2.Delete Customer"));
+    switch (menu) {
+        case 1:
+            addCus();
+            break;
+        case 2:
+            deleteCus();
+            break;
+    }
+    function addCus() {
+        let soLuong = parseInt(prompt("Nhập số lượng phần tử"));
+        let array = new Array();
+
+        for(let i = 0; i < soLuong;i++){
+            let name = prompt("Nhập tên thứ " + (i+1));
+            array.push(name);
+        }
+        let result = "";
+        array.sort();
+        for(let i = 0; i < array.length; i++){
+            result += (i+1) + ": " + array[i] + "\n";
+        }
+
+        alert(result);
+    }
+    function deleteCus() {
+
+    }
+    </script>
+</body>
+</html>
