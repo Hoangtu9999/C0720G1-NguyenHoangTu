@@ -6,7 +6,7 @@
 </head>
 <body>
     <script>
-        function kiemTra(a) {
+        function kiemTraSoHayKiTu(a) {
             if(a >= 0 || a <= 0 ){
                 return true;
             }else{
@@ -15,7 +15,7 @@
             return kiemTra;
         }
         let input = prompt("Nhập");
-        let result = kiemTra(input);
+        let result = kiemTraSoHayKiTu(input);
         if(result){
             alert("a là số");
         }else{

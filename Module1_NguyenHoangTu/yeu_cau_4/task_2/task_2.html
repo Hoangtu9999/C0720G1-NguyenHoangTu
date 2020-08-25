@@ -37,21 +37,19 @@
             result +=  (i+1) + ": " + array[i] +"\n";
         }
         let result1 = "";
-        let input = prompt(result);
-        for(let i = 0 ; i < array.length ; i++){
-                if(input == array[i]){
-                    array.splice(2,1);
-                }
+        let input = parseInt(prompt(result));
 
-
-
+        let check = confirm("Bạn có muốn xóa " + array[input - 1] + " hay không ");
+        if(check){
+            array.splice((input - 1),1);
+        }else {
+            alert("bạn không xóa sản phẩm này " +array[input - 1]);
         }
 
-
-        // for(let i = 0; i < array.length ;i++){
-        //     result1 +=  (i+1) + ": " + array[i] +"\n";
-        // }
-        alert(array);
+        for(let i = 0; i < array.length ;i++){
+            result1 +=  (i+1) + ": " + array[i] +"\n";
+        }
+        alert(result1);
     }
 </script>
 </body>
