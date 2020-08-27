@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai-tap</title>
+</head>
+<body>
+    <script>
+        class Temperature{
+            constructor(doC) {
+                this.doC = doC;
+            }
+
+            getDoC(){
+                return this.doC;
+            }
+            chuyenDoiDoF(doC){
+                return this.getDoC() * 1.8000 + 32;
+            }
+            chuyenDoiDoK(doC){
+                return this.getDoC() + 273.15;
+            }
+            toString(){
+                return this.getDoC() + " độ C bằng " + this.chuyenDoiDoF() + " độ F" + "\n"
+                       + this.getDoC() + " độ C bằng " + this.chuyenDoiDoK() + " độ K";
+            }
+        }
+        let input = parseFloat(prompt("Nhập độ C:"));
+        let test = new Temperature(input);
+        alert(test.toString());
+    </script>
+</body>
+</html>

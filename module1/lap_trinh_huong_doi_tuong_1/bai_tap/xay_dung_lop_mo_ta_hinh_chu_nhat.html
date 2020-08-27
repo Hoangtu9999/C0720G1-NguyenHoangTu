@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="1000px" height="1000px" style="border:1px solid #d3d3d3;">
+        <p id="hienThi"></p>
+        <script>
+            class HinhChuNhat{
+                constructor(chieuDai,chieuRong) {
+                    this.chieuDai = chieuDai;
+                    this.chieuRong = chieuRong;
+                }
+
+                getChieuDai(){
+                    return this.chieuDai;
+                }
+                setChieuDai(chieuDai){
+                    this.chieuDai = chieuDai ;
+                }
+                getChieuRong(){
+                    return this.chieuRong;
+                }
+                setChieuRong(){
+                    this.chieuRong = chieuRong ;
+                }
+
+                getDienTich(chieuDai,chieuRong){
+                    return this.getChieuDai() * this.getChieuRong();
+                }
+                getChuVi(chieuDai,cr){
+                    return (this.getChieuDai() + this.getChieuRong()) * 2;
+                }
+
+                hienThiHinhChuNhat(){
+                    var ctx = document.getElementById("myCanvas").getContext("2d");
+                    ctx.fillStyle = "#FF0000";
+                    ctx.fillRect(0,0,this.getChieuRong(),this.getChieuDai());
+                }
+                toString(){
+                    return "Chu vi là:" + this.getChuVi() + "\n" + "Diện tích là:" + this.getDienTich();
+                }
+            }
+            let chieuDai = parseInt(prompt("Nhập chiều dài:"));
+            let chieuRong = parseInt(prompt("Nhập chiều rộng:"));
+            let test = new HinhChuNhat(chieuDai,chieuRong);
+
+            let creat = test.hienThiHinhChuNhat();
+            let result = test.toString() ;
+            console.log(result);
+
+        </script>
+</body>
+</html>

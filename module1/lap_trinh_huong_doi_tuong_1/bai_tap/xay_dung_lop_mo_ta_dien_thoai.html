@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai-tap</title>
+</head>
+<body>
+    <script>
+        class Mobile{
+            constructor() {
+                this.pin = "100";
+                this.status = "On";
+                this.messageDrafted = [];//lưu tin nhắn đang soạn thảo.
+                this.messageSaveInbox = [];//lưu tin nhắn trong hộp thư đến.
+                this.messageSaveSent = [];// lưu tin nhắn đã gửi
+            }
+            phoneStatus(){
+                if(this.status === "On"){
+                    alert("Đã bật điện thoại");
+                }else{
+                    alert("Điện thoại đang tắt");
+                }
+            }
+            onPhone(){
+               this.status = "On";
+            }
+            OffPhone(){
+                this.status = "Off";
+            }
+            texting(message){ // soạn tin nhắn
+                if(this.status === "On"){
+                    this.messageDrafted.push(message);
+                    this.pin--;
+                }else{
+                    alert("điện thoại đang tắt");
+                }
+
+            }
+            sendMessage(mobile){ //gửi tin nhắn đến điện thoại khác
+                if(this.status === "On"){
+                    mobile.messageSaveInbox = this.messageDrafted;
+                    this.messageSaveSent = this.messageDrafted;
+                    this.messageDrafted = [];
+                    this.pin--;
+                }else{
+                    alert("điện thoại đang tắt")
+                }
+
+            }
+            showMessageSaveInbox(){ // xem tin trong hộp thư đến
+                if(this.status === "On"){
+                    return this.messageSaveInbox;
+                    this.pin--;
+                }else{
+                    alert("Diện thoại đang tắt");
+                }
+
+            }
+            showMessageSaveSent(){ // xem tin đã gửi
+                if(this.status === "On"){
+                    return this.messageSaveSent;
+                    this.pin--;
+                }else{
+                    alert("Diện thoại đang tắt");
+                }
+            }
+            showPin(){
+                return this.pin;
+            }
+        }
+        let nokia = new Mobile();
+        let iphone = new Mobile();
+        nokia.texting("Nguyễn Hoàng Tứ");
+        nokia.sendMessage(iphone);
+        alert("Tin nhắn đã nhận:" + iphone.showMessageSaveInbox()) ;
+        alert("Tin đã gửi:" + nokia.showMessageSaveSent());
+        alert("Pin còn lại: " + nokia.showPin() + "%");
+
+    </script>
+</body>
+</html>
