@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai-tap</title>
+</head>
+<body>
+<script>
+    class Customer {
+        constructor(name, identityCard, dateOfBirth, email, address, customer, discount,
+                    quantityIncluded, numberOfRentalDays, typeOfService, typeOfRoomToRent) {
+            this.name = name;
+            this.identityCard = identityCard;
+            this.dateOfBirth = dateOfBirth;
+            this.email = email;
+            this.address = address;
+            this.customer = customer;
+            this.discount = discount;
+            this.quantityIncluded = quantityIncluded;
+            this.numberOfRentalDays = numberOfRentalDays;
+            this.typeOfService = typeOfService;
+            this.typeOfRoomToRent = typeOfRoomToRent;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        setName(name) {
+            this.name = name;
+        }
+
+        getIdentityCard() {
+            return this.identityCard;
+        }
+
+        setIdentityCard(identityCard) {
+            this.identityCard = identityCard;
+        }
+
+        getDateOfBirth() {
+            return this.dateOfBirth;
+        }
+
+        setDateOfBirth(dateOfBirth) {
+            this.dateOfBirth = dateOfBirth;
+        }
+
+        getEmail() {
+            return this.email;
+        }
+
+        setEmail(email) {
+            this.email = email;
+        }
+
+        getAddress() {
+            return this.address;
+        }
+
+        setAddress(address) {
+            this.address = address;
+        }
+
+        getCustomer() {
+            return this.customer;
+        }
+
+        setCustomer(customer) {
+            this.customer = customer;
+        }
+
+        getDiscount() {
+            return this.discount;
+        }
+
+        setDiscount(discount) {
+            this.discount = discount;
+        }
+
+        getQuantityIncluded() {
+            return this.quantityIncluded;
+        }
+
+        setQuantityIncluded(quantityIncluded) {
+            this.quantityIncluded = quantityIncluded;
+        }
+
+        getNumberOfRentalDays() {
+            return this.numberOfRentalDays;
+        }
+
+        setNumberOfRentalDays(numberOfRentalDays) {
+            this.numberOfRentalDays = numberOfRentalDays;
+        }
+
+        getTypeOfService() {
+            return this.typeOfService;
+        }
+
+        setTypeOfService(typeOfService) {
+            this.typeOfService = typeOfService;
+        }
+
+        getTypeOfRoomToRent() {
+            return this.typeOfRoomToRent;
+        }
+
+        setTypeOfRoomToRent(typeOfRoomToRent) {
+            this.typeOfRoomToRent = typeOfRoomToRent;
+        }
+
+        checkoutRoom() {
+            if (this.typeOfService == "Villa") {
+                let money = 500 * this.numberOfRentalDays * (1 - this.discount / 100);
+                alert("Số tiền cần phải trả khi thuê villa:" + money + "$");
+            } else if (this.typeOfService == "House") {
+                let money = 300 * this.numberOfRentalDays * (1 - this.discount / 100);
+                alert("Số tiền cần phải trả khi thuê house:" + money + "$");
+            } else if (this.typeOfService == "Room") {
+                let money = 100 * this.numberOfRentalDays * (1 - this.discount / 100);
+                alert("Số tiền cần phải trả khi thuê room:" + money + "$");
+            } else {
+                alert("vui lòng nhập đúng loại dịch vụ");
+            }
+            return money;
+
+        }
+    }
+
+    class Employee {
+        constructor(nameEmployee, dateOfBirthEmployee, identityCardEmployee, phone, emailEmployee, level, location) {
+            this.nameEmployee = nameEmployee;
+            this.dateOfBirthEmployee = dateOfBirthEmployee;
+            this.identityCardEmployee = identityCardEmployee;
+            this.phone = phone;
+            this.emailEmployee = emailEmployee;
+            this.level = level;
+            this.location = location;
+        }
+
+        getNameEmployee() {
+            return this.nameEmployee;
+        }
+
+        setNameEmployee(name) {
+            this.nameEmployee = nameEmployee;
+        }
+
+        getDateOfBirthEmployee() {
+            return this.dateOfBirthEmployee;
+        }
+
+        setDateOfBirthEmployee(dateOfBirthEmployee) {
+            this.dateOfBirthEmployee = dateOfBirthEmployee;
+        }
+
+        getIdentityCardEmployee() {
+            return this.identityCardEmployee;
+        }
+
+        setIdentityCardEmployee(identityCardEmployee) {
+            this.identityCardEmployee = identityCardEmployee;
+        }
+
+        getPhone() {
+            return this.phone;
+        }
+
+        setPhone(phone) {
+            this.phone = phone;
+        }
+
+        getEmailEmployee() {
+            return this.emailEmployee;
+        }
+
+        setEmailEmployee(emailEmployee) {
+            this.emailEmployee = emailEmployee;
+        }
+
+        getLevel() {
+            return this.level;
+        }
+
+        setLevel(level) {
+            this.level = level;
+        }
+
+        getLocation() {
+            return this.location;
+        }
+
+        setLocation(location) {
+            this.location = location;
+        }
+
+        salaryEmployee() {
+            let salary = 0;
+            if (this.location == "Manager") {
+                alert("Lương của Manager: " + (salary = 500) + "$");
+            } else if (this.location == "Sale") {
+                alert("Lương của Sale: " + (salary = 300) + "$");
+            } else if (this.location == "Marketing") {
+                alert("Lương của Marketing: " + (salary = 200) + "$");
+            } else {
+                alert("vui lòng nhập đúng vị trí");
+            }
+            return salary;
+        }
+
+    }
+
+    let arrListCustomers = [];
+    let arrEmployees = [];
+
+    function displayMainMenu() {
+        let input = parseInt(prompt("1.Add new customer " +
+            "\n2.Display information customer " +
+            "\n3.Display total pay of customer " +
+            "\n4.Edit information customer " +
+            "\n5.Delete customer " +
+            "\n6.Add new employee " +
+            "\n7.Display information employee " +
+            "\n8.Display total pay of employee " +
+            "\n9.Edit information employee " +
+            "\n10.Delete employee " +
+            "\n11.Exit"));
+
+        switch (input) {
+            case 1:
+                addNewCustomer();
+                break;
+            case 2:
+                displayCustomers();
+                break;
+            case 3:
+                displayTotalPayOfCustomer();
+                break
+            case 4:
+                editCustomer();
+                break;
+            case 5:
+                deleteCustomer();
+                break;
+            case 6:
+                addNewEmployee();
+                break;
+            case 7:
+                displayEmployee();
+                break;
+            case 8:
+                displaySalaryEmployee();
+                break
+            case 9:
+                editEmployee();
+                break;
+            case 10:
+                deleteEmployee();
+                break;
+            case 11 :
+                displayMainMenu();
+                break;
+            default:
+                alert("Vui lòng nhập từ 1 - 11");
+                break;
+        }
+    }
+
+    function addNewCustomer() {
+
+
+        let name = prompt("Họ tên:");
+        let identityCard = prompt("Số CMND:");
+        let dateOfBirth = prompt("Ngày tháng năm sinh:");
+        let email = prompt("Email:");
+        let address = prompt("Địa chỉ:");
+        let customer = prompt("Loại khách hàng:");
+        let discount = prompt("Giảm giá:");
+        let quantityIncluded = prompt("Số người đi kèm:");
+        let numberOfRentalDays = prompt("Số ngày thuê:");
+        let typeOfService = prompt("Loại dịch vụ:");
+        let typeOfRoomToRent = prompt("Loại phòng thuê:");
+
+        let newCustomers = new Customer(name, identityCard, dateOfBirth, email, address, customer,
+            discount, quantityIncluded, numberOfRentalDays, typeOfService, typeOfRoomToRent);
+
+        arrListCustomers.push(newCustomers);
+        alert("bạn đã nhập thành công");
+        displayMainMenu();
+    }
+
+    function displayCustomers() {
+        let temp = "";
+        for (let i = 0; i < arrListCustomers.length; i++) {
+            temp += i + ". Name :" + arrListCustomers[i].getName() + "\n";
+        }
+        let chooseDisplay = parseInt(prompt(temp));
+        alert("1.Họ tên: " + arrListCustomers[chooseDisplay].getName() + "\n"
+            + "3.Ngày tháng năm sinh: " + arrListCustomers[chooseDisplay].getDateOfBirth() + "\n"
+            + "2.Số CMND: " + arrListCustomers[chooseDisplay].getIdentityCard() + "\n"
+            + "4.Email: " + arrListCustomers[chooseDisplay].getEmail() + "\n"
+            + "5.Địa chỉ:" + arrListCustomers[chooseDisplay].getAddress() + "\n"
+            + "6.Loại khách hàng:" + arrListCustomers[chooseDisplay].getCustomer() + "\n"
+            + "7.Giảm giá:" + arrListCustomers[chooseDisplay].getDiscount() + "\n"
+            + "8.Số người đi kèm:" + arrListCustomers[chooseDisplay].getQuantityIncluded() + "\n"
+            + "9.Số ngày thuê:" + arrListCustomers[chooseDisplay].getNumberOfRentalDays() + "\n"
+            + "10.Loại dịch vụ:" + arrListCustomers[chooseDisplay].getTypeOfService() + "\n"
+            + "11.Loại phòng thuê: " + arrListCustomers[chooseDisplay].getTypeOfRoomToRent());
+        displayMainMenu();
+    }
+
+    function displayTotalPayOfCustomer() {
+        let temp = "";
+        for (let i = 0; i < arrListCustomers.length; i++) {
+            temp += i + ". Name :" + arrListCustomers[i].getName() + "\n";
+        }
+        let chooseDisplay = parseInt(prompt(temp));
+        let customer = arrListCustomers[chooseDisplay];
+        customer.checkoutRoom();
+
+        displayMainMenu();
+    }
+
+    function editCustomer() {
+        let temp = "";
+        for (let i = 0; i < arrListCustomers.length; i++) {
+            temp += i + ". Name :" + arrListCustomers[i].getName() + "\n";
+        }
+        let chooseDisplay = parseInt(prompt(temp));
+        let chooseEdit = parseInt(prompt("1.Họ tên: " + arrListCustomers[chooseDisplay].getName() + "\n"
+            + "2.Số CMND: " + arrListCustomers[chooseDisplay].getIdentityCard() + "\n"
+            + "3.Ngày tháng năm sinh: " + arrListCustomers[chooseDisplay].getDateOfBirth() + "\n"
+            + "4.Email: " + arrListCustomers[chooseDisplay].getEmail() + "\n"
+            + "5.Địa chỉ:" + arrListCustomers[chooseDisplay].getAddress() + "\n"
+            + "6.Loại khách hàng:" + arrListCustomers[chooseDisplay].getCustomer() + "\n"
+            + "7.Giảm giá:" + arrListCustomers[chooseDisplay].getDiscount() + "\n"
+            + "8.Số người đi kèm:" + arrListCustomers[chooseDisplay].getQuantityIncluded() + "\n"
+            + "9.Số ngày thuê:" + arrListCustomers[chooseDisplay].getNumberOfRentalDays() + "\n"
+            + "10.Loại dịch vụ:" + arrListCustomers[chooseDisplay].getTypeOfService() + "\n"
+            + "11.Loại phòng thuê: " + arrListCustomers[chooseDisplay].getTypeOfRoomToRent()));
+        switch (chooseEdit) {
+            case 1:
+                arrListCustomers[chooseDisplay].setName(prompt("Họ tên:"));
+                break;
+            case 2:
+                arrListCustomers[chooseDisplay].setIdentityCard(prompt("Số CMND:"));
+                break;
+            case 3:
+                arrListCustomers[chooseDisplay].setDateOfBirth(prompt("Ngày tháng năm sinh:"));
+                break;
+            case 4:
+                arrListCustomers[chooseDisplay].setEmail(prompt("Email:"));
+                break;
+            case 5:
+                arrListCustomers[chooseDisplay].setAddress(prompt("Địa chỉ:"));
+                break;
+            case 6:
+                arrListCustomers[chooseDisplay].setCustomer(prompt("Loại khách hàng:"));
+                break;
+            case 7:
+                arrListCustomers[chooseDisplay].setDiscount(prompt("Giảm giá:"));
+                break;
+            case 8:
+                arrListCustomers[chooseDisplay].setQuantityIncluded(prompt("Số người đi kèm:"));
+                break;
+            case 9:
+                arrListCustomers[chooseDisplay].setNumberOfRentalDays(prompt("Số ngày thuê:"));
+                break;
+            case 10:
+                arrListCustomers[chooseDisplay].setTypeOfService(prompt("Loại dịch vụ:"));
+                break;
+            case 11:
+                arrListCustomers[chooseDisplay].setTypeOfRoomToRent(prompt("Loại phòng thuê:"));
+                break;
+            default:
+                alert("vui lòng nhập từ 1-11");
+                break;
+
+        }
+        editCustomer();
+    }
+
+    function deleteCustomer() {
+        let temp = "";
+        for (let i = 0; i < arrListCustomers.length; i++) {
+            temp += i + ". Name :" + arrListCustomers[i].getName() + "\n";
+        }
+        let chooseDelete = parseInt(prompt(temp));
+        let check = parseInt(prompt("Bạn có chắc muốn xóa." + "\n1.yes   2.no"));
+        if (check == 1) {
+            arrListCustomers.splice(chooseDelete, 1);
+            alert("bạn đã xóa thành công");
+        } else {
+            alert("Thoát");
+        }
+        displayMainMenu();
+    }
+
+
+    function addNewEmployee() {
+        let nameEmployee = prompt("Họ tên:");
+        let dateOfBirthEmployee = prompt("Ngày tháng năm sinh:");
+        let identityCardEmployee = prompt("Số CMND:");
+        let phone = prompt("Số điện thoại:");
+        let emailEmployee = prompt("Email:");
+        let level = prompt("Bằng cấp:");
+        let location = prompt("Vị trí:");
+
+        let newEmployee = new Employee(nameEmployee, dateOfBirthEmployee, identityCardEmployee, phone, emailEmployee, level, location);
+
+        arrEmployees.push(newEmployee);
+        alert("Bạn đã nhập thành công");
+        displayMainMenu();
+    }
+
+    function displayEmployee() {
+        let temp = "";
+        for (let i = 0; i < arrEmployees.length; i++) {
+            temp += i + ".Name:" + arrEmployees[i].getNameEmployee() + "\n";
+        }
+        let chooseDisplay = parseInt(prompt(temp));
+        alert("1.Họ tên: " + arrEmployees[chooseDisplay].getNameEmployee() + "\n"
+            + "2.Ngày tháng năm sinh: " + arrEmployees[chooseDisplay].getDateOfBirthEmployee() + "\n"
+            + "3.Số CMND: " + arrEmployees[chooseDisplay].getIdentityCardEmployee() + "\n"
+            + "4.Số điện thoại: " + arrEmployees[chooseDisplay].getPhone() + "\n"
+            + "5.Email:" + arrEmployees[chooseDisplay].getEmailEmployee() + "\n"
+            + "6.Bằng cấp:" + arrEmployees[chooseDisplay].getLevel() + "\n"
+            + "7.Vị trí:" + arrEmployees[chooseDisplay].getLocation());
+        displayMainMenu();
+    }
+
+    function displaySalaryEmployee() {
+        let temp = "";
+        for (let i = 0; i < arrEmployees.length; i++) {
+            temp += i + ".Name:" + arrEmployees[i].getNameEmployee() + "\n";
+        }
+        let choose = parseInt(prompt(temp));
+        let employee = arrEmployees[choose];
+
+        employee.salaryEmployee();
+        displayMainMenu();
+    }
+
+    function editEmployee() {
+        let temp = "";
+        for (let i = 0; i < arrEmployees.length; i++) {
+            temp += i + ".Name:" + arrEmployees[i].getNameEmployee() + "\n";
+        }
+        let choose = parseInt(prompt(temp));
+        let edit = parseInt(prompt("1.Họ tên: " + arrEmployees[choose].getNameEmployee() + "\n"
+            + "2.Ngày tháng năm sinh: " + arrEmployees[choose].getDateOfBirthEmployee() + "\n"
+            + "3.Số CMND: " + arrEmployees[choose].getIdentityCardEmployee() + "\n"
+            + "4.Số điện thoại: " + arrEmployees[choose].getPhone() + "\n"
+            + "5.Email:" + arrEmployees[choose].getEmailEmployee() + "\n"
+            + "6.Bằng cấp:" + arrEmployees[choose].getLevel() + "\n"
+            + "7.Vị trí:" + arrEmployees[choose].getLocation()));
+        switch (edit) {
+            case 1:
+                arrEmployees[choose].setNameEmployee(prompt("Nhập lại tên:"));
+                break;
+            case 2:
+                arrEmployees[choose].setDateOfBirthEmployee(prompt("Nhập lại ngày sinh:"));
+                break;
+            case 3:
+                arrEmployees[choose].setIdentityCardEmployee(prompt("Nhập lại CMND:"));
+                break;
+            case 4:
+                arrEmployees[choose].setPhone(prompt("Nhập lại số điện thoại:"));
+                break;
+            case 5:
+                arrEmployees[choose].setEmailEmployee(prompt("Nhập lại email:"));
+                break;
+            case 6:
+                arrEmployees[choose].setLevel(prompt("Nhập lại bằng cấp:"));
+                break;
+            case 7:
+                arrEmployees[choose].setLocation(prompt("Nhập lại vị trí:"));
+                break;
+            default:
+                alert("Vui lòng chọn từ 1-7");
+                break;
+        }
+        displayMainMenu();
+    }
+
+    function deleteEmployee() {
+        let temp = "";
+        for (let i = 0; i < arrEmployees.length; i++) {
+            temp += i + ". Name :" + arrEmployees[i].getNameEmployee() + "\n";
+        }
+        let chooseDelete = parseInt(prompt(temp));
+        let check = parseInt(prompt("Bạn có chắc muốn xóa." + "\n1.yes   2.no"));
+        if (check == 1) {
+            arrEmployees.splice(chooseDelete, 1);
+            alert("bạn đã xóa thành công");
+        } else {
+            alert("Thoát");
+        }
+        displayMainMenu();
+    }
+
+
+    displayMainMenu();
+</script>
+</body>
+</html>

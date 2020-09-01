@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý sinh viên</title>
+</head>
+<body>
+<input type="button" value="Them Moi Sinh Vien" onclick="themMoiSV()">
+<input type="text" value="" id="tenSV">
+<input type="button" value="tim kiem theo ten" onclick="timKiem()">
+<p id="hienThi"></p>
+<script>
+    class SinhVien {
+        constructor(maSV, ten, ngaySinh, email) {
+            this.maSV = maSV;
+            this.tenSV = ten;
+            this.ngaySinh = ngaySinh;
+            this.email = email;
+        }
+        setMaSV(maSV) {
+            this.maSV = maSV;
+        }
+        getMaSV() {
+            return this.maSV;
+        }
+        setTenSV(ten) {
+            this.tenSV = ten;
+        }
+        getTenSV() {
+            return this.tenSV;
+        }
+        setNgaySinh(ngaySinh) {
+            this.ngaySinh = ngaySinh;
+        }
+        getNgaySinh() {
+            return this.ngaySinh;
+        }
+        setEmail(email) {
+            this.email = email;
+        }
+        getEmail() {
+            return this.email;
+        }
+        getInfo() {
+            let string = "1. Mã SV: " + this.maSV + "\n 2. Tên: " + this.tenSV +
+                "\n3. Ngày sinh: " + this.ngaySinh + "\n 4. Email: " + this.email;
+            return string;
+        }
+        showInfo() {
+            let string = "1. Mã SV: " + this.maSV + " 2. Tên: " + this.tenSV +
+                "3. Ngày sinh: " + this.ngaySinh + " 4. Email: " + this.email;
+            alert(string);
+        }
+    }
+    let danhSachSV = [];
+    let sv1 = new SinhVien("MSV-0001", "chanh5", "11/12/2020", "chanhtv@gmail.com");
+    let sv2 = new SinhVien("MSV-0002", "chanh2", "11/12/2020", "chanhtv@gmail.com");
+    let sv3 = new SinhVien("MSV-0003", "chanh3", "11/12/2020", "chanhtv@gmail.com");
+    danhSachSV.push(sv1);
+    danhSachSV.push(sv2);
+    danhSachSV.push(sv3);
+    hienThi(danhSachSV);
+    function themMoiSV() {
+        let maSV = prompt("Nhap ma  sinh vien");
+        let ten = prompt("Nhap ten sinh vien");
+        let ngaySinh = prompt("Nhap ngay sinh sinh vien");
+        let email = prompt("Nhap email sinh vien");
+        let sinhVienMoi = new SinhVien(maSV, ten, ngaySinh, email);
+        danhSachSV.push(sinhVienMoi);
+        hienThi(danhSachSV);
+    }
+    function timKiem() {
+        let tenTimKiem= document.getElementById("tenSV").value;
+        let danhSachTK=[];
+        for (let i=0;i<danhSachSV.length;i++){
+            if (danhSachSV[i].getTenSV()==tenTimKiem){
+                danhSachTK.push(danhSachSV[i]);
+            }
+        }
+        hienThi(danhSachTK)
+    }
+    function xoa(i) {
+        let xacNhanXoa = confirm(" ban co muon xo ten sinh vien: " + danhSachSV[i].getTenSV());
+        if (xacNhanXoa) {
+            danhSachSV.splice(i, 1);
+        } else {
+            alert(" ban khong xoa sinh vien nay")
+        }
+        hienThi(danhSachSV);
+    }
+    function sua(i) {
+        let choose = prompt(danhSachSV[i].getInfo());
+        switch (choose) {
+            case "1":
+                danhSachSV[i].setMaSV(prompt("Nhap lai ma sinh vien"))
+                break;
+            case "2":
+                danhSachSV[i].setTenSV(prompt("Nhap lai ten sinh vien"))
+                break;
+            case "3":
+                danhSachSV[i].setNgaySinh(prompt("Nhap lai ngay sinh sinh vien"))
+                break;
+            case "4":
+                danhSachSV[i].setEmail(prompt("Nhap lai email sinh vien"))
+                break;
+            case null:
+                break;
+            default:
+                sua(i);
+                break;
+        }
+        hienThi(danhSachSV);
+    }
+    function hienThi(danhSachSV) {
+        danhSachSV.sort(function (a,b) {
+            let tenA=a.getTenSV();
+            let tenB=b.getTenSV();
+            if (tenA<tenB){
+                return -1
+            }else if (tenA>tenB){
+                return 1
+            }else {
+                return 0;
+            }
+        });
+        let bang = '<table border="1">\n' +
+            '    <tr>\n' +
+            '        <th>STT</th>\n' +
+            '        <th>Mã SV</th>\n' +
+            '        <th>Tên</th>\n' +
+            '        <th>Ngày sinh</th>\n' +
+            '        <th>Email</th>\n' +
+            '        <th>Sửa</th>\n' +
+            '        <th>Xóa</th>\n' +
+            '    </tr>';
+        for (let i = 0; i < danhSachSV.length; i++) {
+            bang += ' <tr>\n' +
+                '        <td>' + (i + 1) + '</td>\n' +
+                '        <td>' + danhSachSV[i].getMaSV() + '</td>\n' +
+                '        <td>' + danhSachSV[i].getTenSV() + '</td>\n' +
+                '        <td>' + danhSachSV[i].getNgaySinh() + '</td>\n' +
+                '        <td>' + danhSachSV[i].getEmail() + '</td>\n' +
+                '        <td><input type="button" value="Sửa" onclick="sua(' + i + ')"></td>\n' +
+                '        <td><input type="button" value="Xóa" onclick="xoa(' + i + ')"></td>\n' +
+                '    </tr>'
+        }
+        bang += '</table>';
+        document.getElementById("hienThi").innerHTML = bang;
+    }
+</script>
+</body>
+</html>
