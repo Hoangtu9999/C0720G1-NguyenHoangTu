@@ -198,11 +198,11 @@
         salaryEmployee() {
             let salary = 0;
             if (this.location == "Manager") {
-                alert("Lương của Manager: " + (salary = 500) + "$");
+                salary = 500;
             } else if (this.location == "Sale") {
-                alert("Lương của Sale: " + (salary = 300) + "$");
+                salary = 300;
             } else if (this.location == "Marketing") {
-                alert("Lương của Marketing: " + (salary = 200) + "$");
+                salary = 200;
             } else {
                 alert("vui lòng nhập đúng vị trí");
             }
@@ -401,12 +401,12 @@
     let reGexDay = /^\d{2}[./-]\d{2}[./-]\d{4}$/;
     let reGexNumber = /^\d{9}$/;
     let reGexPhone =  /^\d{10}$/;
-    
+
     function addNewEmployee() {
         let check = false;
         let dateOfBirthEmployee;
         let identityCardEmployee;
-        let email;
+        let emailEmployee;
         let phone;
         let nameEmployee = prompt("Họ tên:");
         //validate date of birth
@@ -445,8 +445,8 @@
         // validate email
         check = false;
         do {
-            email = prompt("Email:");
-            if (reGexEmail.test(email)) {
+            emailEmployee = prompt("Email:");
+            if (reGexEmail.test(emailEmployee)) {
                 check = true;
             } else {
                 alert("Email không hợp lệ vui lòng nhập lại");
@@ -475,7 +475,11 @@
             + "4.Số điện thoại: " + arrEmployees[chooseDisplay].getPhone() + "\n"
             + "5.Email:" + arrEmployees[chooseDisplay].getEmailEmployee() + "\n"
             + "6.Bằng cấp:" + arrEmployees[chooseDisplay].getLevel() + "\n"
-            + "7.Vị trí:" + arrEmployees[chooseDisplay].getLocation());
+            + "7.Vị trí:" + arrEmployees[chooseDisplay].getLocation()+ "\n"
+            +"8.Lương " + arrEmployees[chooseDisplay].getLocation() + " : "  + arrEmployees[chooseDisplay].salaryEmployee()
+        );
+
+
         displayMainMenu();
     }
 
@@ -487,7 +491,7 @@
         let choose = parseInt(prompt(temp));
         let employee = arrEmployees[choose];
 
-        employee.salaryEmployee();
+        alert("lương của " + employee.getLocation() + " là :" + employee.salaryEmployee());
         displayMainMenu();
     }
 
