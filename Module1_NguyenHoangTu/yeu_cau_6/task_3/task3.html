@@ -111,6 +111,7 @@
         }
 
         checkoutRoom() {
+
             if (this.typeOfService == "Villa") {
                 let money = 500 * this.numberOfRentalDays * (1 - this.discount / 100);
                 alert("Số tiền cần phải trả khi thuê villa:" + money + "$");
@@ -123,7 +124,6 @@
             } else {
                 alert("vui lòng nhập đúng loại dịch vụ");
             }
-            return money;
 
         }
     }

@@ -7,14 +7,26 @@
 <body>
 <script>
     let input = parseInt(prompt("nhập n:"));
+    let input1 = parseInt(prompt("nhập n:"));
     let f0 = 0;
     let f1 = 1;
     let result =  f0 + ", " + f1 + ", ";
+    let check = false;
     for (let i = 3; i <= input; i++) {
         fn = f0 + f1;
         result += fn + ", ";
         f0 = f1 ;
         f1 = fn;
+    }
+    for (let i = 0; i <= result.length; i++) {
+        if(result[i] == input1){
+            check = true;
+        }else{
+            check = false;
+        }
+    }
+    if(!check){
+        alert("dung");
     }
     document.write(result);
 </script>
