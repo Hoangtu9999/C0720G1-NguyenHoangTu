@@ -12,7 +12,7 @@ public class TinhTongCacSoOMotCotNhatDinh {
         System.out.println("Nhập vào số cột của mảng: ");
         n = scanner.nextInt();
 
-        int A[][] = new int[m][n];
+        int[][] A = new int[m][n];
 
         System.out.println("Nhập các phần tử cho mảng: ");
         for (int i = 0; i < m; i++) {
@@ -21,15 +21,15 @@ public class TinhTongCacSoOMotCotNhatDinh {
                 A[i][j] = scanner.nextInt();
             }
         }
-        System.out.print("Nhập cột cần tính tổng");
-        int h = scanner.nextInt();
-        
-        int sum = 0 ;
-        for (int j = 0 ; j < m ; j++){
-            for (int k = 0 ; k  < n; k++){
-                sum += A[j][k];
+//        System.out.print("Nhập cột cần tính tổng:");
+//        int h = scanner.nextInt();
+        for (int j = 0; j < m; j++) {
+            int sum = 0;
+            for (int k = 0; k < n; k++) {
+                sum += A[k][j];
             }
+            System.out.println("Tổng cột" + j + " :" + sum);
         }
-        System.out.println("Tổng là:" + sum);
+
     }
 }
