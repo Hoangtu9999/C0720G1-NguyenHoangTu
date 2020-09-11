@@ -4,128 +4,141 @@ import java.util.Scanner;
 
 public class UngDungDocSoThanhChu {
 
-    public static void hangChuc(int hangChuc) {
-        switch (hangChuc) {
-            case 0:
-                System.out.print(" linh ");
-                break;
+    static String read1To10(int number) {
+        String str = "";
+        switch(number) {
             case 1:
-                System.out.print(" Muoi ");
+                str = "one";
                 break;
             case 2:
-                System.out.print(" Hai Muoi ");
+                str = "two";
                 break;
             case 3:
-                System.out.print(" Ba Muoi ");
+                str = "three";
                 break;
             case 4:
-                System.out.print(" Bon Muoi ");
+                str = "four";
                 break;
             case 5:
-                System.out.print(" Nam Muoi ");
+                str = "five";
                 break;
             case 6:
-                System.out.print(" Sau Muoi ");
+                str = "six";
                 break;
             case 7:
-                System.out.print(" Bay Muoi ");
+                str = "seven";
                 break;
             case 8:
-                System.out.print(" Tam Muoi ");
+                str = "eight";
                 break;
             case 9:
-                System.out.print(" Chin Muoi ");
+                str = "nine";
+                break;
+            case 10:
+                str = "ten";
                 break;
         }
+        return str;
     }
-
-    public static void hangTran(int hangTram) {
-        switch (hangTram) {
-            case 0:
-                System.out.print(" Khong Tram ");
+    static String read11To19(int number) {
+        String str = null;
+        switch(number) {
+            case 11:
+                str = "eleven";
                 break;
-            case 1:
-                System.out.print(" Mot Tram ");
+            case 12:
+                str = "twelve";
                 break;
-            case 2:
-                System.out.print(" Hai Tram ");
+            case 13:
+                str = "thirteen";
                 break;
-            case 3:
-                System.out.print(" Ba Tram ");
+            case 14:
+                str = "forteen";
                 break;
-            case 4:
-                System.out.print(" Bon Tram ");
+            case 15:
+                str = "fifteen";
                 break;
-            case 5:
-                System.out.print(" Nam Tram ");
-                break;
-            case 6:
-                System.out.print(" Sau Tram ");
-                break;
-            case 7:
-                System.out.print(" Bay Tran ");
-                break;
-            case 8:
-                System.out.print(" Tam Tram ");
-                break;
-            case 9:
-                System.out.print(" Chin Tram ");
+            case 16:
+            case 17:
+            case 18:
+            case 19:
+                int hangDonVi = number % 10;
+                str = read1To10(hangDonVi) + "teen";
                 break;
         }
+        return str;
     }
-    public static void donVi(int donVi){
-        switch (donVi) {
-            case 0:
-                System.out.print(" Khong ");
+    static String readNumberTy(int number) {
+        String str = null;
+        switch (number) {
+            case 20:
+                str = "twenty";
                 break;
-            case 1:
-                System.out.print(" Mot ");
+            case 30:
+                str = "thirty";
                 break;
-            case 2:
-                System.out.print(" Hai ");
+            case 40:
+                str = "forty";
                 break;
-            case 3:
-                System.out.print(" Ba ");
+            case 50:
+                str = "fifty";
                 break;
-            case 4:
-                System.out.print(" Bon ");
-                break;
-            case 5:
-                System.out.print(" Nam ");
-                break;
-            case 6:
-                System.out.print(" Sau ");
-                break;
-            case 7:
-                System.out.print(" Bay ");
-                break;
-            case 8:
-                System.out.print(" Tam ");
-                break;
-            case 9:
-                System.out.print(" Chin ");
+            case 60:
+            case 70:
+            case 80:
+            case 90:
+                int hangChuc = number / 10;
+                str = read1To10(hangChuc) + "ty";
                 break;
         }
+        return str;
     }
-
+    static String hundred(int number) {
+        String str = null;
+        switch (number) {
+            case 200:
+                str = "twenty";
+                break;
+            case 300:
+                str = "thirty";
+                break;
+            case 400:
+                str = "forty";
+                break;
+            case 500:
+                str = "fifty";
+                break;
+            case 600:
+            case 700:
+            case 800:
+            case 900:
+                int hangChuc = number / 10;
+                str = read1To10(hangChuc) + "ty";
+                break;
+        }
+        return str;
+    }
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.println("Nhập vào một số:");
-        int nhapSo = input.nextInt();
-        int donVi = nhapSo % 10;
-        int chuc = (nhapSo / 10) % 10;
-        int tram = (nhapSo / 100) % 10;
-        if (chuc == 0) {
-            donVi(donVi);
-        } else if (tram == 0) {
-            hangChuc(chuc);
-            donVi(donVi);
-        } else {
-            hangTran(tram);
-            hangChuc(chuc);
-            donVi(donVi);
+        // INPUT
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please input number: ");
+        int number = scanner.nextInt();
+        //21
+        int hangChuc = number / 10;
+        String strHangChuc = hangChuc + "0";
+        int hangDonVi = number % 10;
+        String result = readNumberTy(Integer.parseInt(strHangChuc)) + " " + read1To10(hangDonVi);
 
-        }
+        // STEP 5: 3 chu so
+        // 100, 200, 300, 400
 
+        // readOneHundred(int number)
+        // -> hangTram = number / 100
+        // -> read1To10(hangTram) + "one hundred"
+        // hangChucVaDonVi = number % 100;
+        // read1To99(hangChucVaDonVi);
+
+        // OUTPUT
+        System.out.println("Result: " + result);
     }
 }
