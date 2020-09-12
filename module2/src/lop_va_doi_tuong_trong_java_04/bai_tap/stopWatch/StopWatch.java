@@ -1,40 +1,31 @@
 package lop_va_doi_tuong_trong_java_04.bai_tap.stopWatch;
 
 public class StopWatch {
-    private boolean startTime;
-    private boolean endTime;
+    private long startTime;
+    private long endTime;
 
-    public StopWatch() {
-        System.currentTimeMillis();
-    }
-
-    public StopWatch(boolean startTime, boolean endTime) {
-        this.startTime = startTime;
-        this.endTime = endTime;
-    }
-
-    public boolean isStartTime() {
+    public long getStartTime() {
         return startTime;
     }
 
-    public void setStartTime(boolean startTime) {
-        this.startTime = startTime;
-    }
-
-    public boolean isEndTime() {
+    public long getEndTime() {
         return endTime;
     }
 
-    public void setEndTime(boolean endTime) {
-        this.endTime = endTime;
+    public StopWatch() {
+        this.startTime = System.currentTimeMillis();
     }
 
-    @Override
-    public String toString() {
-        return "StopWatch{" +
-                "startTime=" + startTime +
-                ", endTime=" + endTime +
-                '}';
+    public void start() {
+        this.startTime = System.currentTimeMillis(); // 3h00
     }
-        
+
+    public void stop() {
+        this.endTime = System.currentTimeMillis(); //3h15
+    }
+
+    public long getElapsedTime() {
+        return this.endTime - this.startTime;
+    }
+
 }

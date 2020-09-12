@@ -31,39 +31,39 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager" selected="Application.demo">
+  <component name="RunManager" selected="Application.Demo (1)">
+    <configuration name="Demo (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lop_va_doi_tuong_trong_java_04.bai_tap.fan.Demo" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lop_va_doi_tuong_trong_java_04.bai_tap.fan.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lop_va_doi_tuong_trong_java_04.bai_tap.stopWatch.Demo" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lop_va_doi_tuong_trong_java_04.bai_tap.stopWatch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Ex14_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lop_va_doi_tuong_trong_java_04.thuc_hanh.Ex14_1" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="lop_va_doi_tuong_trong_java_04.thuc_hanh.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TimGiaTriNhoNhatTrongMang" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mang_va_phuong_thuc_trong_java_03.bai_tap.TimGiaTriNhoNhatTrongMang" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mang_va_phuong_thuc_trong_java_03.bai_tap.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TimPhanTuLonNhatTrongMangHaiChieu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mang_va_phuong_thuc_trong_java_03.bai_tap.TimPhanTuLonNhatTrongMangHaiChieu" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mang_va_phuong_thuc_trong_java_03.bai_tap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,11 +99,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Demo (1)" />
+        <item itemvalue="Application.Demo" />
         <item itemvalue="Application.demo" />
         <item itemvalue="Application.Ex14_1" />
         <item itemvalue="Application.TinhTongCacSoOMotCotNhatDinh" />
-        <item itemvalue="Application.TimGiaTriNhoNhatTrongMang" />
-        <item itemvalue="Application.TimPhanTuLonNhatTrongMangHaiChieu" />
       </list>
     </recent_temporary>
   </component>
@@ -122,7 +122,8 @@
       <workItem from="1599614871506" duration="24314000" />
       <workItem from="1599708386257" duration="14836000" />
       <workItem from="1599749196778" duration="6896000" />
-      <workItem from="1599812616268" duration="4815000" />
+      <workItem from="1599812616268" duration="5500000" />
+      <workItem from="1599881778794" duration="4187000" />
     </task>
     <servers />
   </component>
@@ -130,26 +131,26 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1599815465817">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1599888823244">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1599815465817" />
-    <state width="1493" height="505" key="GridCell.Tab.0.bottom" timestamp="1599814735266">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1599888823244" />
+    <state width="1493" height="149" key="GridCell.Tab.0.bottom" timestamp="1599889210980">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="505" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599814735266" />
-    <state width="1493" height="505" key="GridCell.Tab.0.center" timestamp="1599814735266">
+    <state width="1493" height="149" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599889210980" />
+    <state width="1493" height="149" key="GridCell.Tab.0.center" timestamp="1599889210980">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="505" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599814735266" />
-    <state width="1493" height="505" key="GridCell.Tab.0.left" timestamp="1599814735266">
+    <state width="1493" height="149" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599889210980" />
+    <state width="1493" height="149" key="GridCell.Tab.0.left" timestamp="1599889210980">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="505" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599814735266" />
-    <state width="1493" height="505" key="GridCell.Tab.0.right" timestamp="1599814735266">
+    <state width="1493" height="149" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599889210980" />
+    <state width="1493" height="149" key="GridCell.Tab.0.right" timestamp="1599889210980">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="505" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599814735266" />
+    <state width="1493" height="149" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599889210980" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1599734192979">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -166,9 +167,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1599734192979" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1599812616940">
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1599881795369">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1599812616940" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1599881795369" />
   </component>
 </project>
