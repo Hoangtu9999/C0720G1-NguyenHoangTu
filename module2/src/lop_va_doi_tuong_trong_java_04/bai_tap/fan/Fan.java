@@ -1,12 +1,12 @@
 package lop_va_doi_tuong_trong_java_04.bai_tap.fan;
 
 public class Fan {
-    int SLOW = 1;
-    int MEDIUM = 2;
-    int FAST = 3;
+    public static final int SLOW = 1;
+    public static final int MEDIUM = 2;
+    public static final int FAST = 3;
     private int speed = SLOW;
-    private boolean on = false ;
-    private double radius = 5 ;
+    private boolean on = false;
+    private double radius = 5;
     private String color = "blue";
 
     public Fan() {
@@ -53,14 +53,14 @@ public class Fan {
 
     @Override
     public String toString() {
-        if(on == true){
+        if (on == true) {
             return "Fan{" +
                     "speed=" + speed +
                     ", radius=" + radius +
                     ", color='" + color + '\'' +
                     "fan is on" +
                     '}';
-        }else {
+        } else {
             return "Fan{" +
                     "speed=" + speed +
                     ", radius=" + radius +

@@ -8,8 +8,7 @@ public class Demo {
         long[] array = new long[(int) (Math.random() * (100000))];
         sort(array);
         stopWatch.stop();
-
-        System.out.println(stopWatch.getElapsedTime());
+        System.out.println(stopWatch.getElapsedTime() + " S");
     }
     public static void sort(long arr[])
     {
