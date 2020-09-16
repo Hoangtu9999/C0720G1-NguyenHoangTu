@@ -10,6 +10,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -31,13 +32,13 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager" selected="Application.Demo (1)">
-    <configuration name="Demo (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lop_va_doi_tuong_trong_java_04.bai_tap.fan.Demo" />
+  <component name="RunManager" selected="Application.Test (1)">
+    <configuration name="CircleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_06_ke_thua.thuc_hanh.CircleTest" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lop_va_doi_tuong_trong_java_04.bai_tap.fan.*" />
+          <option name="PATTERN" value="_06_ke_thua.thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -45,12 +46,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lop_va_doi_tuong_trong_java_04.bai_tap.stopWatch.Demo" />
+    <configuration name="RectangleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_06_ke_thua.thuc_hanh.RectangleTest" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lop_va_doi_tuong_trong_java_04.bai_tap.stopWatch.*" />
+          <option name="PATTERN" value="_06_ke_thua.thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -58,12 +59,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCircle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="access_modifier_static_method_static_property_05.bai_tap.TestCircle" />
+    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_06_ke_thua.bai_tap.thiet_ke_va_trien_khai_lop_triangle.Test" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="access_modifier_static_method_static_property_05.bai_tap.*" />
+          <option name="PATTERN" value="_06_ke_thua.bai_tap.thiet_ke_va_trien_khai_lop_triangle.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -71,12 +72,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestStaticMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="access_modifier_static_method_static_property_05.thuc_hanh.static_method.TestStaticMethod" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_06_ke_thua.bai_tap.lop_point2D_va_lop_point3D.Test" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="access_modifier_static_method_static_property_05.thuc_hanh.static_method.*" />
+          <option name="PATTERN" value="_06_ke_thua.bai_tap.lop_point2D_va_lop_point3D.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -84,12 +85,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestStaticProperty" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="access_modifier_static_method_static_property_05.thuc_hanh.static_property.TestStaticProperty" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_06_ke_thua.bai_tap.lop_point_va_moveable_point.Test" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="access_modifier_static_method_static_property_05.thuc_hanh.static_property.*" />
+          <option name="PATTERN" value="_06_ke_thua.bai_tap.lop_point_va_moveable_point.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCylinder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_06_ke_thua.bai_tap.lop_circle_va_lop_cylinder.TestCylinder" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_06_ke_thua.bai_tap.lop_circle_va_lop_cylinder.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,11 +113,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Demo (1)" />
-        <item itemvalue="Application.Demo" />
-        <item itemvalue="Application.TestCircle" />
-        <item itemvalue="Application.TestStaticProperty" />
-        <item itemvalue="Application.TestStaticMethod" />
+        <item itemvalue="Application.Test (1)" />
+        <item itemvalue="Application.Test (1)" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.TestCylinder" />
+        <item itemvalue="Application.RectangleTest" />
       </list>
     </recent_temporary>
   </component>
@@ -126,6 +140,7 @@
       <workItem from="1599881778794" duration="4187000" />
       <workItem from="1600050844142" duration="1995000" />
       <workItem from="1600054605516" duration="6053000" />
+      <workItem from="1600138007702" duration="11630000" />
     </task>
     <servers />
   </component>
@@ -133,30 +148,34 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1600052035678">
+    <state x="361" y="71" key="#Notifications" timestamp="1600138819916">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1600052035678" />
+    <state x="361" y="71" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1600138819916" />
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1600163116339">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1600163116339" />
     <state x="496" y="318" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1600051388149">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="496" y="318" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1536.824@0.0.1536.824" timestamp="1600051388149" />
-    <state width="1493" height="149" key="GridCell.Tab.0.bottom" timestamp="1600078544013">
+    <state width="1493" height="149" key="GridCell.Tab.0.bottom" timestamp="1600164870194">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="149" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600078544013" />
-    <state width="1493" height="149" key="GridCell.Tab.0.center" timestamp="1600078544013">
+    <state width="1493" height="149" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600164870194" />
+    <state width="1493" height="149" key="GridCell.Tab.0.center" timestamp="1600164870194">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="149" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600078544013" />
-    <state width="1493" height="149" key="GridCell.Tab.0.left" timestamp="1600078544013">
+    <state width="1493" height="149" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600164870194" />
+    <state width="1493" height="149" key="GridCell.Tab.0.left" timestamp="1600164870194">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="149" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600078544013" />
-    <state width="1493" height="149" key="GridCell.Tab.0.right" timestamp="1600078544013">
+    <state width="1493" height="149" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600164870194" />
+    <state width="1493" height="149" key="GridCell.Tab.0.right" timestamp="1600164870194">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="149" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600078544013" />
+    <state width="1493" height="149" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600164870194" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1599734192979">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -173,9 +192,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1599734192979" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1600054870241">
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1600138090121">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1600054870241" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1600138090121" />
   </component>
 </project>
