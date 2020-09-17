@@ -23,6 +23,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -33,62 +37,26 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="_07_abstract_class_va_interface.thuc_hanh.trien_khai_interface_comparable_cho_cac_lop_hinh_hoc" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="_07_abstract_class_va_interface.thuc_hanh.trien_khai_interface_comparable_cho_cac_lop_hinh_hoc" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\module2\src\_07_abstract_class_va_interface\thuc_hanh\trien_khai_interface_comparable_cho_cac_lop_hinh_hoc" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="_07_abstract_class_va_interface.bai_tap.trien_khai_interface_colorable_cho_cac_lop_hinh_hoc" />
       <recent name="_07_abstract_class_va_interface.thuc_hanh.trien_khai_interface_comparator_de_so_sanh_cac_lop_hinh_hoc" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\module2\src\_07_abstract_class_va_interface\thuc_hanh\trien_khai_interface_comparable_cho_cac_lop_hinh_hoc" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="_07_abstract_class_va_interface.thuc_hanh.trien_khai_interface_comparable_cho_cac_lop_hinh_hoc" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestColorable">
-    <configuration name="AbstractAndInterfaceTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_07_abstract_class_va_interface.thuc_hanh.lop_animal_va_interface_edible.AbstractAndInterfaceTests" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_07_abstract_class_va_interface.thuc_hanh.lop_animal_va_interface_edible.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CircleComparatorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_07_abstract_class_va_interface.thuc_hanh.trien_khai_interface_comparator_de_so_sanh_cac_lop_hinh_hoc.CircleComparatorTest" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_07_abstract_class_va_interface.thuc_hanh.trien_khai_interface_comparator_de_so_sanh_cac_lop_hinh_hoc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ComparableCircleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_07_abstract_class_va_interface.thuc_hanh.trien_khai_interface_comparable_cho_cac_lop_hinh_hoc.ComparableCircleTest" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_07_abstract_class_va_interface.thuc_hanh.trien_khai_interface_comparable_cho_cac_lop_hinh_hoc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TennisGameTest">
     <configuration name="ResizeableTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_07_abstract_class_va_interface.bai_tap.trien_khai_interface_resizeable_cho_cac_lop_hinh_hoc.ResizeableTest" />
       <module name="module2" />
@@ -115,13 +83,60 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CalculatorTest.testCalculateAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_08_clean_code_va_refactoring.thuc_hanh.refactoring_doi_ten_bien_va_tach_hang.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="_08_clean_code_va_refactoring.thuc_hanh.refactoring_doi_ten_bien_va_tach_hang" />
+      <option name="MAIN_CLASS_NAME" value="_08_clean_code_va_refactoring.thuc_hanh.refactoring_doi_ten_bien_va_tach_hang.CalculatorTest" />
+      <option name="METHOD_NAME" value="testCalculateAdd" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculatorTest.testCalculateDivByZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_08_clean_code_va_refactoring.thuc_hanh.refactoring_doi_ten_bien_va_tach_hang.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="_08_clean_code_va_refactoring.thuc_hanh.refactoring_doi_ten_bien_va_tach_hang" />
+      <option name="MAIN_CLASS_NAME" value="_08_clean_code_va_refactoring.thuc_hanh.refactoring_doi_ten_bien_va_tach_hang.CalculatorTest" />
+      <option name="METHOD_NAME" value="testCalculateDivByZero" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TennisGameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_08_clean_code_va_refactoring.bai_tap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="_08_clean_code_va_refactoring.bai_tap" />
+      <option name="MAIN_CLASS_NAME" value="_08_clean_code_va_refactoring.bai_tap.TennisGameTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TennisGameTest" />
+        <item itemvalue="JUnit.CalculatorTest.testCalculateAdd" />
+        <item itemvalue="JUnit.CalculatorTest.testCalculateDivByZero" />
         <item itemvalue="Application.TestColorable" />
         <item itemvalue="Application.ResizeableTest" />
-        <item itemvalue="Application.CircleComparatorTest" />
-        <item itemvalue="Application.ComparableCircleTest" />
-        <item itemvalue="Application.AbstractAndInterfaceTests" />
       </list>
     </recent_temporary>
   </component>
@@ -147,6 +162,7 @@
       <workItem from="1600138007702" duration="11630000" />
       <workItem from="1600225324613" duration="7509000" />
       <workItem from="1600257645253" duration="2180000" />
+      <workItem from="1600305148077" duration="10625000" />
     </task>
     <servers />
   </component>
@@ -158,10 +174,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1600138819916" />
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1600258382891">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1600309336633">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1600258382891" />
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1600309336633" />
     <state x="496" y="318" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1600051388149">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -170,22 +186,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1600247466699" />
-    <state width="1342" height="162" key="GridCell.Tab.0.bottom" timestamp="1600261295930">
+    <state width="1493" height="127" key="GridCell.Tab.0.bottom" timestamp="1600314708521">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1342" height="162" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600261295930" />
-    <state width="1342" height="162" key="GridCell.Tab.0.center" timestamp="1600261295930">
+    <state width="1493" height="127" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600314708521" />
+    <state width="1493" height="127" key="GridCell.Tab.0.center" timestamp="1600314708520">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1342" height="162" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600261295930" />
-    <state width="1342" height="162" key="GridCell.Tab.0.left" timestamp="1600261295930">
+    <state width="1493" height="127" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600314708520" />
+    <state width="1493" height="127" key="GridCell.Tab.0.left" timestamp="1600314708520">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1342" height="162" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600261295930" />
-    <state width="1342" height="162" key="GridCell.Tab.0.right" timestamp="1600261295930">
+    <state width="1493" height="127" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600314708520" />
+    <state width="1493" height="127" key="GridCell.Tab.0.right" timestamp="1600314708520">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1342" height="162" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600261295930" />
+    <state width="1493" height="127" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600314708520" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1599734192979">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -202,9 +218,17 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1599734192979" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1600257662326">
+    <state x="249" y="0" key="SettingsEditor" timestamp="1600312846293">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1600257662326" />
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1600312846293" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1600305159389">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1600305159389" />
+    <state x="498" y="306" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1600312484553">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="498" y="306" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.824@0.0.1536.824" timestamp="1600312484553" />
   </component>
 </project>

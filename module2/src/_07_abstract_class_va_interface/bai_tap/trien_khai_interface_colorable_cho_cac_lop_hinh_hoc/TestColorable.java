@@ -6,9 +6,12 @@ public class TestColorable {
         shapes[0] = new Square(5);
 
         for (Shape shape : shapes){
-            if(shape instanceof Square){
-                System.out.println(shape.getArea());
-                shape.howToColor();
+
+
+            if(shape instanceof Colorable){
+                Square square = (Square) shape ;
+                System.out.println(square.getArea());
+                square.howToColor();
             }
         }
     }
