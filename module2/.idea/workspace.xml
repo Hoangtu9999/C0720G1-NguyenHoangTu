@@ -30,6 +30,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="public" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/_07_abstract_class_va_interface/thuc_hanh/trien_khai_interface_comparable_cho_cac_lop_hinh_hoc" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -162,7 +163,9 @@
       <workItem from="1600138007702" duration="11630000" />
       <workItem from="1600225324613" duration="7509000" />
       <workItem from="1600257645253" duration="2180000" />
-      <workItem from="1600305148077" duration="10625000" />
+      <workItem from="1600305148077" duration="12361000" />
+      <workItem from="1600484607089" duration="169000" />
+      <workItem from="1600484797934" duration="51000" />
     </task>
     <servers />
   </component>
@@ -186,22 +189,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1600247466699" />
-    <state width="1493" height="127" key="GridCell.Tab.0.bottom" timestamp="1600314708521">
+    <state width="1493" height="127" key="GridCell.Tab.0.bottom" timestamp="1600338636207">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="127" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600314708521" />
-    <state width="1493" height="127" key="GridCell.Tab.0.center" timestamp="1600314708520">
+    <state width="1493" height="127" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600338636207" />
+    <state width="1493" height="127" key="GridCell.Tab.0.center" timestamp="1600338636207">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="127" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600314708520" />
-    <state width="1493" height="127" key="GridCell.Tab.0.left" timestamp="1600314708520">
+    <state width="1493" height="127" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600338636207" />
+    <state width="1493" height="127" key="GridCell.Tab.0.left" timestamp="1600338636207">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="127" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600314708520" />
-    <state width="1493" height="127" key="GridCell.Tab.0.right" timestamp="1600314708520">
+    <state width="1493" height="127" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600338636207" />
+    <state width="1493" height="127" key="GridCell.Tab.0.right" timestamp="1600338636207">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="127" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600314708520" />
+    <state width="1493" height="127" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600338636207" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1599734192979">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -222,13 +225,17 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1600312846293" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1600305159389">
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1600484798610">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1600305159389" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1600484798610" />
     <state x="498" y="306" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1600312484553">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="498" y="306" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.824@0.0.1536.824" timestamp="1600312484553" />
+    <state x="877" y="172" key="extract.method.dialog" timestamp="1600484735732">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="877" y="172" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1600484735732" />
   </component>
 </project>
