@@ -2,30 +2,24 @@ package _08_clean_code_va_refactoring.bai_tap;
 
 public class TennisGame {
 
-    public static String getScore(String player1Name, String player2Name, int m_score1, int m_score2) {
+    public static String getScore(String player1Name, String player2Name, int playerScore1, int playerScore2) {
         String score = "";
-        int tempScore=0;
-        if (m_score1==m_score2)
-        {
-            score = compareScore(m_score1);
-        }
-        else if (m_score1>=4 || m_score2>=4)
-        {
-            int minusResult = m_score1-m_score2;
-            if (minusResult==1) score ="Advantage player1";
-            else if (minusResult ==-1) score ="Advantage player2";
-            else if (minusResult>=2) score = "Win for player1";
-            else score ="Win for player2";
-        }
-        else
-        {
-            for (int i=1; i<3; i++)
-            {
-                if (i==1)
-                    tempScore = m_score1;
+        int tempScore = 0;
+        if (playerScore1 == playerScore2) {
+            score = compareScore(playerScore1);
+        } else if (playerScore1 >= 4 || playerScore2 >= 4) {
+            int minusResult = playerScore1 - playerScore2;
+            if (minusResult == 1) score = "Advantage player1";
+            else if (minusResult == -1) score = "Advantage player2";
+            else if (minusResult >= 2) score = "Win for player1";
+            else score = "Win for player2";
+        } else {
+            for (int i = 1; i < 3; i++) {
+                if (i == 1)
+                    tempScore = playerScore1;
                 else {
-                    score+="-";
-                    tempScore = m_score2;
+                    score += "-";
+                    tempScore = playerScore2;
                 }
 
                 score = compareTempScore(score, tempScore);
@@ -35,28 +29,26 @@ public class TennisGame {
     }
 
     public static String compareTempScore(String score, int tempScore) {
-        switch(tempScore)
-        {
+        switch (tempScore) {
             case 0:
-                score+="Love";
+                score += "Love";
                 break;
             case 1:
-                score+="Fifteen";
+                score += "Fifteen";
                 break;
             case 2:
-                score+="Thirty";
+                score += "Thirty";
                 break;
             case 3:
-                score+="Forty";
+                score += "Forty";
                 break;
         }
         return score;
     }
 
-    public static String compareScore(int m_score1) {
+    public static String compareScore(int playerScore1) {
         String score;
-        switch (m_score1)
-        {
+        switch (playerScore1) {
             case 0:
                 score = "Love-All";
                 break;

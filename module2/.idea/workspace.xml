@@ -46,24 +46,26 @@
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="_07_abstract_class_va_interface.thuc_hanh.trien_khai_interface_comparable_cho_cac_lop_hinh_hoc" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\module2\src\_07_abstract_class_va_interface\thuc_hanh\trien_khai_interface_comparable_cho_cac_lop_hinh_hoc" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="_07_abstract_class_va_interface.bai_tap.trien_khai_interface_colorable_cho_cac_lop_hinh_hoc" />
-      <recent name="_07_abstract_class_va_interface.thuc_hanh.trien_khai_interface_comparator_de_so_sanh_cac_lop_hinh_hoc" />
-    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="_07_abstract_class_va_interface.thuc_hanh.trien_khai_interface_comparable_cho_cac_lop_hinh_hoc" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="_11_DSA_stack_queue.bai_tap.dao_nguoc_phtu_trong_mang_so_nguyen_su_dung_stack" />
+      <recent name="_11_DSA_stack_queue.thuc_hanh.trien_khai_stack_su_dung_lop_linkedlist" />
+      <recent name="_07_abstract_class_va_interface.bai_tap.trien_khai_interface_colorable_cho_cac_lop_hinh_hoc" />
+      <recent name="_07_abstract_class_va_interface.thuc_hanh.trien_khai_interface_comparator_de_so_sanh_cac_lop_hinh_hoc" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\module2\src\_07_abstract_class_va_interface\thuc_hanh\trien_khai_interface_comparable_cho_cac_lop_hinh_hoc" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.MyLinkedListTest">
-    <configuration name="MyLinkedListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_10_DSA_danh_sach.bai_tap.trien_khai_cac_phuong_thuc_cua_linkedlist.MyLinkedListTest" />
+  <component name="RunManager" selected="Application.TestSolution">
+    <configuration name="GenericStackClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_11_DSA_stack_queue.thuc_hanh.trien_khai_stack_su_dung_lop_linkedlist.GenericStackClient" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_10_DSA_danh_sach.bai_tap.trien_khai_cac_phuong_thuc_cua_linkedlist.*" />
+          <option name="PATTERN" value="_11_DSA_stack_queue.thuc_hanh.trien_khai_stack_su_dung_lop_linkedlist.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -71,12 +73,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_10_DSA_danh_sach.thuc_hanh.trien_khai_lop_list_don_gian.MyListTest" />
+    <configuration name="LinkedListQueueClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_11_DSA_stack_queue.thuc_hanh.trien_khai_queue_su_dung_danh_sanh_lien_ket.LinkedListQueueClient" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_10_DSA_danh_sach.thuc_hanh.trien_khai_lop_list_don_gian.*" />
+          <option name="PATTERN" value="_11_DSA_stack_queue.thuc_hanh.trien_khai_queue_su_dung_danh_sanh_lien_ket.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -84,12 +86,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMyLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_10_DSA_danh_sach.thuc_hanh.trien_khai_lop_linkedlist_don_gian.TestMyLinkedList" />
+    <configuration name="ReverseStackNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_11_DSA_stack_queue.bai_tap.dao_nguoc_phtu_trong_mang_so_nguyen_su_dung_stack.ReverseStackNumber" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_10_DSA_danh_sach.thuc_hanh.trien_khai_lop_linkedlist_don_gian.*" />
+          <option name="PATTERN" value="_11_DSA_stack_queue.bai_tap.trien_khai_queue_su_dung_danh_sach_lien_ket_vong.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,12 +99,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMyList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_10_DSA_danh_sach.bai_tap.trien_khai_cac_phuong_thuc_cua_arraylist.TestMyList" />
+    <configuration name="ReverseStackString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_11_DSA_stack_queue.bai_tap.dao_nguoc_phtu_trong_mang_so_nguyen_su_dung_stack.ReverseStackString" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_10_DSA_danh_sach.bai_tap.trien_khai_cac_phuong_thuc_cua_arraylist.*" />
+          <option name="PATTERN" value="_11_DSA_stack_queue.bai_tap.trien_khai_queue_su_dung_danh_sach_lien_ket_vong.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,28 +112,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TennisGameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSolution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_11_DSA_stack_queue.bai_tap.trien_khai_queue_su_dung_danh_sach_lien_ket_vong.TestSolution" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_08_clean_code_va_refactoring.bai_tap.*" />
+          <option name="PATTERN" value="_11_DSA_stack_queue.bai_tap.trien_khai_queue_su_dung_danh_sach_lien_ket_vong.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="_08_clean_code_va_refactoring.bai_tap" />
-      <option name="MAIN_CLASS_NAME" value="_08_clean_code_va_refactoring.bai_tap.TennisGameTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MyLinkedListTest" />
-        <item itemvalue="Application.TestMyList" />
-        <item itemvalue="Application.TestMyLinkedList" />
-        <item itemvalue="Application.MyListTest" />
-        <item itemvalue="JUnit.TennisGameTest" />
+        <item itemvalue="Application.TestSolution" />
+        <item itemvalue="Application.TestReverseStackString" />
+        <item itemvalue="Application.TestReverseStackNumber" />
+        <item itemvalue="Application.LinkedListQueueClient" />
+        <item itemvalue="Application.GenericStackClient" />
       </list>
     </recent_temporary>
   </component>
@@ -161,6 +161,7 @@
       <workItem from="1600484607089" duration="169000" />
       <workItem from="1600484797934" duration="51000" />
       <workItem from="1600654386321" duration="15373000" />
+      <workItem from="1600741946854" duration="13497000" />
     </task>
     <servers />
   </component>
@@ -172,34 +173,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1600138819916" />
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1600679979107">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1600766320757">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1600679979107" />
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1600766320757" />
     <state x="496" y="318" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1600051388149">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="496" y="318" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1536.824@0.0.1536.824" timestamp="1600051388149" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600247466699">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600743338504">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1600247466699" />
-    <state width="675" height="224" key="GridCell.Tab.0.bottom" timestamp="1600683232019">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1600743338504" />
+    <state x="880" y="162" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1600765111940">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="675" height="224" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600683232019" />
-    <state width="675" height="224" key="GridCell.Tab.0.center" timestamp="1600683232019">
+    <state x="880" y="162" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1536.824@0.0.1536.824" timestamp="1600765111940" />
+    <state width="728" height="224" key="GridCell.Tab.0.bottom" timestamp="1600769140752">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="675" height="224" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600683232019" />
-    <state width="675" height="224" key="GridCell.Tab.0.left" timestamp="1600683232019">
+    <state width="728" height="224" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600769140752" />
+    <state width="728" height="224" key="GridCell.Tab.0.center" timestamp="1600769140752">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="675" height="224" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600683232019" />
-    <state width="675" height="224" key="GridCell.Tab.0.right" timestamp="1600683232019">
+    <state width="728" height="224" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600769140752" />
+    <state width="728" height="224" key="GridCell.Tab.0.left" timestamp="1600769140752">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="675" height="224" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600683232019" />
+    <state width="728" height="224" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600769140752" />
+    <state width="728" height="224" key="GridCell.Tab.0.right" timestamp="1600769140752">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="728" height="224" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600769140752" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1599734192979">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -220,21 +225,21 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1600312846293" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1600654402317">
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1600741949679">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1600654402317" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1600741949679" />
     <state x="498" y="306" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1600312484553">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="498" y="306" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.824@0.0.1536.824" timestamp="1600312484553" />
-    <state x="877" y="172" key="extract.method.dialog" timestamp="1600484735732">
+    <state x="877" y="172" width="538" height="495" key="extract.method.dialog" timestamp="1600765020487">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="877" y="172" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1600484735732" />
-    <state x="838" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1600679960632">
+    <state x="877" y="172" width="538" height="495" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1600765020487" />
+    <state x="838" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1600768235502">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="838" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1600679960632" />
+    <state x="838" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1600768235502" />
   </component>
 </project>
