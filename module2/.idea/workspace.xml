@@ -46,8 +46,8 @@
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="_07_abstract_class_va_interface.thuc_hanh.trien_khai_interface_comparable_cho_cac_lop_hinh_hoc" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\module2\src\_07_abstract_class_va_interface\thuc_hanh\trien_khai_interface_comparable_cho_cac_lop_hinh_hoc" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="_07_abstract_class_va_interface.thuc_hanh.trien_khai_interface_comparable_cho_cac_lop_hinh_hoc" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="_11_DSA_stack_queue.bai_tap.dao_nguoc_phtu_trong_mang_so_nguyen_su_dung_stack" />
@@ -55,11 +55,12 @@
       <recent name="_07_abstract_class_va_interface.bai_tap.trien_khai_interface_colorable_cho_cac_lop_hinh_hoc" />
       <recent name="_07_abstract_class_va_interface.thuc_hanh.trien_khai_interface_comparator_de_so_sanh_cac_lop_hinh_hoc" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="_07_abstract_class_va_interface.thuc_hanh.trien_khai_interface_comparable_cho_cac_lop_hinh_hoc" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\module2\src\_12_java_collections_framework\bai_tap\luyen_tap_su_dung_arraylist_linkedlist_trong_java_collection\linked_list" />
+      <recent name="D:\module2\src\_07_abstract_class_va_interface\thuc_hanh\trien_khai_interface_comparable_cho_cac_lop_hinh_hoc" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestBST">
+  <component name="RunManager" selected="Application.main (1)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_12_java_collections_framework.thuc_hanh.sap_xep_voi_comparable_va_comparator.Main" />
       <module name="module2" />
@@ -99,12 +100,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_12_java_collections_framework.thuc_hanh.su_dung_hashMap_linkedMap_treeMap_de_luu_ds_sv_theo_tuoi.TestMap" />
+    <configuration name="main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_12_java_collections_framework.bai_tap.luyen_tap_su_dung_arraylist_linkedlist_trong_java_collection.linked_list.main" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_12_java_collections_framework.thuc_hanh.su_dung_hashMap_linkedMap_treeMap_de_luu_ds_sv_theo_tuoi.*" />
+          <option name="PATTERN" value="_12_java_collections_framework.bai_tap.luyen_tap_su_dung_arraylist_linkedlist_trong_java_collection.linked_list.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,11 +114,11 @@
       </method>
     </configuration>
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_12_java_collections_framework.bai_tap.luyen_tap_su_dung_arraylist_linkedlist_trong_java_collection.main" />
+      <option name="MAIN_CLASS_NAME" value="_12_java_collections_framework.bai_tap.luyen_tap_su_dung_arraylist_linkedlist_trong_java_collection.array_list.main" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_12_java_collections_framework.bai_tap.luyen_tap_su_dung_arraylist_linkedlist_trong_java_collection.*" />
+          <option name="PATTERN" value="_12_java_collections_framework.bai_tap.luyen_tap_su_dung_arraylist_linkedlist_trong_java_collection.array_list.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestBST" />
+        <item itemvalue="Application.main (1)" />
         <item itemvalue="Application.main" />
+        <item itemvalue="Application.TestBST" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.TestMap" />
       </list>
     </recent_temporary>
   </component>
@@ -165,6 +166,8 @@
       <workItem from="1600824641419" duration="16417000" />
       <workItem from="1600851715330" duration="19000" />
       <workItem from="1600914497973" duration="15649000" />
+      <workItem from="1600997192515" duration="1902000" />
+      <workItem from="1601000303687" duration="634000" />
     </task>
     <servers />
   </component>
@@ -196,26 +199,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="880" y="162" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1536.824@0.0.1536.824" timestamp="1600765111940" />
-    <state x="758" y="154" key="FileChooserDialogImpl" timestamp="1600850103973">
+    <state x="758" y="154" key="FileChooserDialogImpl" timestamp="1600999090354">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="758" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600850103973" />
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1600942645878">
+    <state x="758" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600999090354" />
+    <state width="730" height="223" key="GridCell.Tab.0.bottom" timestamp="1600999098640">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600942645878" />
-    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1600942645878">
+    <state width="730" height="223" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600999098640" />
+    <state width="730" height="223" key="GridCell.Tab.0.center" timestamp="1600999098640">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600942645878" />
-    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1600942645878">
+    <state width="730" height="223" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600999098640" />
+    <state width="730" height="223" key="GridCell.Tab.0.left" timestamp="1600999098640">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600942645878" />
-    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1600942645878">
+    <state width="730" height="223" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600999098640" />
+    <state width="730" height="223" key="GridCell.Tab.0.right" timestamp="1600999098640">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600942645878" />
+    <state width="730" height="223" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600999098640" />
     <state width="730" height="255" key="GridCell.Tab.1.bottom" timestamp="1600942642682">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -236,10 +239,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1600312846293" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1600824641637">
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1600997192837">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1600824641637" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1600997192837" />
     <state x="498" y="306" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1600312484553">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
