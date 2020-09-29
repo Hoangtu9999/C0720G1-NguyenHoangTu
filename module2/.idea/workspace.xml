@@ -60,13 +60,26 @@
       <recent name="D:\module2\src\_07_abstract_class_va_interface\thuc_hanh\trien_khai_interface_comparable_cho_cac_lop_hinh_hoc" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.main (1)">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_12_java_collections_framework.thuc_hanh.sap_xep_voi_comparable_va_comparator.Main" />
+  <component name="RunManager" selected="Application.SortInsertion">
+    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_13_thuat_toan_tim_kiem.thuc_hanh.BinarySearch" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_12_java_collections_framework.thuc_hanh.sap_xep_voi_comparable_va_comparator.*" />
+          <option name="PATTERN" value="_13_thuat_toan_tim_kiem.thuc_hanh.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BubbleSortByStep" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_14_thuat_toan_sap_xep.thuc_hanh.minh_hoa_thuat_toan_sap_xep.BubbleSortByStep" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_14_thuat_toan_sap_xep.thuc_hanh.minh_hoa_thuat_toan_sap_xep.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -75,11 +88,11 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_12_java_collections_framework.thuc_hanh.phan_biet_hashMap_va_hashSet.Main" />
+      <option name="MAIN_CLASS_NAME" value="_13_thuat_toan_tim_kiem.bai_tap.tim_chuoi_tang_dan_co_do_dai_lon_nhat.Main" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_12_java_collections_framework.thuc_hanh.phan_biet_hashMap_va_hashSet.*" />
+          <option name="PATTERN" value="_13_thuat_toan_tim_kiem.bai_tap.tim_chuoi_tang_dan_co_do_dai_lon_nhat.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -87,12 +100,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestBST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_12_java_collections_framework.thuc_hanh.cai_dat_cay_tim_kiem_nhi_phan.TestBST" />
+    <configuration name="SelectionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_14_thuat_toan_sap_xep.thuc_hanh.cai_dat_thuat_toan_sap_xep_chon.SelectionSort" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_12_java_collections_framework.thuc_hanh.cai_dat_cay_tim_kiem_nhi_phan.*" />
+          <option name="PATTERN" value="_14_thuat_toan_sap_xep.thuc_hanh.cai_dat_thuat_toan_sap_xep_chon.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,25 +113,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_12_java_collections_framework.bai_tap.luyen_tap_su_dung_arraylist_linkedlist_trong_java_collection.linked_list.main" />
+    <configuration name="SortInsertion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_14_thuat_toan_sap_xep.bai_tap.cai_dat_thuat_toan_sap_xep_chen.SortInsertion" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_12_java_collections_framework.bai_tap.luyen_tap_su_dung_arraylist_linkedlist_trong_java_collection.linked_list.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_12_java_collections_framework.bai_tap.luyen_tap_su_dung_arraylist_linkedlist_trong_java_collection.array_list.main" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_12_java_collections_framework.bai_tap.luyen_tap_su_dung_arraylist_linkedlist_trong_java_collection.array_list.*" />
+          <option name="PATTERN" value="_14_thuat_toan_sap_xep.bai_tap.cai_dat_thuat_toan_sap_xep_chen.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,10 +128,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.main (1)" />
-        <item itemvalue="Application.main" />
-        <item itemvalue="Application.TestBST" />
-        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.SortInsertion" />
+        <item itemvalue="Application.SelectionSort" />
+        <item itemvalue="Application.BubbleSortByStep" />
+        <item itemvalue="Application.BinarySearch" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -168,6 +168,10 @@
       <workItem from="1600914497973" duration="15649000" />
       <workItem from="1600997192515" duration="1902000" />
       <workItem from="1601000303687" duration="634000" />
+      <workItem from="1601255885702" duration="2647000" />
+      <workItem from="1601263056976" duration="1044000" />
+      <workItem from="1601343651957" duration="7354000" />
+      <workItem from="1601365923206" duration="888000" />
     </task>
     <servers />
   </component>
@@ -199,42 +203,42 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="880" y="162" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1536.824@0.0.1536.824" timestamp="1600765111940" />
-    <state x="758" y="154" key="FileChooserDialogImpl" timestamp="1600999090354">
+    <state x="758" y="154" key="FileChooserDialogImpl" timestamp="1601352138084">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="758" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600999090354" />
-    <state width="730" height="223" key="GridCell.Tab.0.bottom" timestamp="1600999098640">
+    <state x="758" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601352138084" />
+    <state width="1493" height="190" key="GridCell.Tab.0.bottom" timestamp="1601365951921">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="730" height="223" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600999098640" />
-    <state width="730" height="223" key="GridCell.Tab.0.center" timestamp="1600999098640">
+    <state width="1493" height="190" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601365951921" />
+    <state width="1493" height="190" key="GridCell.Tab.0.center" timestamp="1601365951921">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="730" height="223" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600999098640" />
-    <state width="730" height="223" key="GridCell.Tab.0.left" timestamp="1600999098640">
+    <state width="1493" height="190" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601365951921" />
+    <state width="1493" height="190" key="GridCell.Tab.0.left" timestamp="1601365951920">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="730" height="223" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600999098640" />
-    <state width="730" height="223" key="GridCell.Tab.0.right" timestamp="1600999098640">
+    <state width="1493" height="190" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601365951920" />
+    <state width="1493" height="190" key="GridCell.Tab.0.right" timestamp="1601365951921">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="730" height="223" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600999098640" />
-    <state width="730" height="255" key="GridCell.Tab.1.bottom" timestamp="1600942642682">
+    <state width="1493" height="190" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601365951921" />
+    <state width="1493" height="190" key="GridCell.Tab.1.bottom" timestamp="1601365952087">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="730" height="255" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600942642682" />
-    <state width="730" height="255" key="GridCell.Tab.1.center" timestamp="1600942642682">
+    <state width="1493" height="190" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601365952087" />
+    <state width="1493" height="190" key="GridCell.Tab.1.center" timestamp="1601365952087">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="730" height="255" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1600942642682" />
-    <state width="730" height="255" key="GridCell.Tab.1.left" timestamp="1600942642682">
+    <state width="1493" height="190" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1601365952087" />
+    <state width="1493" height="190" key="GridCell.Tab.1.left" timestamp="1601365952087">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="730" height="255" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1600942642682" />
-    <state width="730" height="255" key="GridCell.Tab.1.right" timestamp="1600942642682">
+    <state width="1493" height="190" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1601365952087" />
+    <state width="1493" height="190" key="GridCell.Tab.1.right" timestamp="1601365952087">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="730" height="255" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1600942642682" />
+    <state width="1493" height="190" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1601365952087" />
     <state x="249" y="0" key="SettingsEditor" timestamp="1600312846293">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -281,6 +285,16 @@
           <url>file://$PROJECT_DIR$/src/_12_java_collections_framework/thuc_hanh/sap_xep_voi_comparable_va_comparator/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/_14_thuat_toan_sap_xep/thuc_hanh/cai_dat_thuat_toan_sap_xep_chon/SelectionSort.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/_14_thuat_toan_sap_xep/bai_tap/cai_dat_thuat_toan_sap_xep_chen/SortInsertion.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
