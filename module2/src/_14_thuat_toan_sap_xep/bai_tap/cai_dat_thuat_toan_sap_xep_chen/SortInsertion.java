@@ -1,5 +1,8 @@
 package _14_thuat_toan_sap_xep.bai_tap.cai_dat_thuat_toan_sap_xep_chen;
 
+import java.sql.Array;
+import java.util.Arrays;
+
 public class SortInsertion {
     public void insertionSort(int arr[]) {
         int valueToInsert;
@@ -30,20 +33,8 @@ public class SortInsertion {
             }
 
             System.out.println("Vong lap thu " + i);
-            display(arr);
+            System.out.println(Arrays.toString(arr));
         }
-    }
-
-    public void display(int arr[]) {
-        int i;
-        System.out.print("[");
-
-        // Duyet qua tat ca phan tu
-        for (i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
-        }
-
-        System.out.print("]\n");
     }
 
     public static void main(String[] args) {
@@ -52,11 +43,11 @@ public class SortInsertion {
 
         SortInsertion sortInsertion = new SortInsertion();
         System.out.println("Mang du lieu dau vao: ");
-        sortInsertion.display(arr);
+        System.out.println(Arrays.toString(arr));
         System.out.println("-----------------------------");
         sortInsertion.insertionSort(arr);
         System.out.println("-----------------------------");
         System.out.println("\nMang sau khi da sap xep: ");
-        sortInsertion.display(arr);
+        System.out.println(Arrays.toString(arr));
     }
 }
