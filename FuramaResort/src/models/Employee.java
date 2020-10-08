@@ -4,16 +4,18 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 public class Employee {
+    private String idEmployee;
     private String nameEmployee;
-    private Date dateOfBirth;
+    private String dateOfBirth;
     private int identityCardNumber;
     private int numberOfPhone;
     private String Email;
     private String academicLevel;
     private String location;
-    private BigDecimal salary;
+    private int salary;
 
-    public Employee(String nameEmployee, Date dateOfBirth, int identityCardNumber, int numberOfPhone, String email, String academicLevel, String location, BigDecimal salary) {
+    public Employee(String idEmployee, String nameEmployee, String dateOfBirth, int identityCardNumber, int numberOfPhone, String email, String academicLevel, String location, int salary) {
+        this.idEmployee = idEmployee;
         this.nameEmployee = nameEmployee;
         this.dateOfBirth = dateOfBirth;
         this.identityCardNumber = identityCardNumber;
@@ -27,6 +29,14 @@ public class Employee {
     public Employee() {
     }
 
+    public String getIdEmployee() {
+        return idEmployee;
+    }
+
+    public void setIdEmployee(String idEmployee) {
+        this.idEmployee = idEmployee;
+    }
+
     public String getNameEmployee() {
         return nameEmployee;
     }
@@ -35,11 +45,11 @@ public class Employee {
         this.nameEmployee = nameEmployee;
     }
 
-    public Date getDateOfBirth() {
+    public String getDateOfBirth() {
         return dateOfBirth;
     }
 
-    public void setDateOfBirth(Date dateOfBirth) {
+    public void setDateOfBirth(String dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 
@@ -83,18 +93,19 @@ public class Employee {
         this.location = location;
     }
 
-    public BigDecimal getSalary() {
+    public int getSalary() {
         return salary;
     }
 
-    public void setSalary(BigDecimal salary) {
+    public void setSalary(int salary) {
         this.salary = salary;
     }
 
     @Override
     public String toString() {
         return "Employee{" +
-                "nameEmployee='" + nameEmployee + '\'' +
+                "idEmployee='" + idEmployee + '\'' +
+                ", nameEmployee='" + nameEmployee + '\'' +
                 ", dateOfBirth=" + dateOfBirth +
                 ", identityCardNumber=" + identityCardNumber +
                 ", numberOfPhone=" + numberOfPhone +
@@ -104,6 +115,4 @@ public class Employee {
                 ", salary=" + salary +
                 '}';
     }
-
-
 }

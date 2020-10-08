@@ -4,11 +4,8 @@ package controllers;
 import commons.*;
 import models.*;
 
-import java.util.ArrayList;
+import java.util.*;
 
-import java.util.Collections;
-import java.util.List;
-import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -26,16 +23,23 @@ public class MainController {
     public static ArrayList<House> listHouse = new ArrayList();
     public static ArrayList<Room> listRoom = new ArrayList();
     public static ArrayList<Customer> listCustomer = new ArrayList();
+    public static ArrayList<Employee> listEmployeeArray = new ArrayList();
+    public static Map<String, Employee> listEmployeeMap = new TreeMap<>();
+    public static Queue<Customer> listQueue = new LinkedList<>();
+    public static Stack<Employee> listStack = new Stack<>();
+
 
     public static final String FILE_NAME_VILLA = "src/data/Villa.csv";
     public static final String FILE_NAME_HOUSE = "src/data/House.csv";
     public static final String FILE_NAME_ROOM = "src/data/Room.csv";
     public static final String FILE_NAME_CUSTOMER = "src/data/Customer.csv";
     public static final String FILE_NAME_BOOKING = "src/data/Booking.csv";
+    public static final String FILE_NAME_EMPLOYEE = "src/data/Employee.csv";
     public static final String COMMA = ",";
 
 
     public static void main(String[] args) {
+
         displayMenu();
     }
 
@@ -108,10 +112,27 @@ public class MainController {
                 showServices();
                 break;
             case 4:
-
+                showsListNameVilla();
+                showServices();
+                break;
+            case 5:
+                showsListNameHouse();
+                showServices();
+                break;
+            case 6:
+                showsListNameRoom();
+                showServices();
+                break;
+            default:
+                System.out.println("vui lòng nhập từ 1 - 6");
+                break;
         }
     }
-    /**END SERVICE**/
+    /**
+     ** END SERVICE
+     **/
+
+
     /**
      * VILLA
      **/
@@ -175,9 +196,19 @@ public class MainController {
             System.out.println(index++ + "\n" + villa);
         }
     }
+
+    public static void showsListNameVilla() {
+        Set<String> listSet = new TreeSet<>();
+        for (Villa villa : listVilla) {
+            listSet.add(villa.getServiceName());
+        }
+        for (String string : listSet) {
+            System.out.println(string);
+        }
+    }
     /**
      * END VILLA
-     * **/
+     **/
 
     /**
      * HOUSE
@@ -236,6 +267,16 @@ public class MainController {
                     Integer.parseInt(listSlit[4]), listSlit[5], listSlit[6], listSlit[7], Integer.parseInt(listSlit[8]));
             listHouse.add(house);
             System.out.println(index++ + "\n" + house);
+        }
+    }
+
+    public static void showsListNameHouse() {
+        Set<String> listSet = new TreeSet<>();
+        for (House house : listHouse) {
+            listSet.add(house.getServiceName());
+        }
+        for (String string : listSet) {
+            System.out.println(string);
         }
     }
     /**
@@ -310,47 +351,20 @@ public class MainController {
         }
     }
 
+    public static void showsListNameRoom() {
+        Set<String> listSet = new TreeSet<>();
+        for (Room room : listRoom) {
+            listSet.add(room.getServiceName());
+        }
+        for (String string : listSet) {
+            System.out.println(string);
+        }
+    }
+
     /**
      * END ROOM
      **/
 
-
-    public static void displayMenu() {
-        System.out.println("---------------------------" + "\n"
-                + "1.Add New Services" + "\n"
-                + "2.Show Services" + "\n"
-                + "3.Add New Customer" + "\n"
-                + "4.Show Information of Customer" + "\n"
-                + "5.Add New Booking" + "\n"
-                + "6.Show Information of Employee" + "\n"
-                + "7.Exit" + "\n"
-                + "---------------------------");
-        System.out.print("Vui lòng chọn:");
-        int input = Integer.parseInt(scanner.nextLine());
-        switch (input) {
-            case 1:
-                menuAdd();
-                displayMenu();
-                break;
-            case 2:
-                showServices();
-                displayMenu();
-                break;
-            case 3:
-                addCutomer();
-                displayMenu();
-                break;
-            case 4:
-                showInformationCustomers();
-                displayMenu();
-                break;
-            case 5:
-
-                AddNewBooking();
-                displayMenu();
-                break;
-        }
-    }
 
     /**
      * CUSTOMER
@@ -500,18 +514,21 @@ public class MainController {
     /**
      * END CUSTOMER
      **/
+
+
     /**
      * BOOKING
      **/
 
-    public static void AddNewBooking() {
+    public static void addNewBooking() {
         showInformationCustomers();
         System.out.print("Vui lòng chọn khách hàng:");
         chooseTheCustomer = Integer.parseInt(scanner.nextLine());
         System.out.println("---------------------" + "\n" +
                 "1.Booking Villa\n" +
                 "2.Booking House\n" +
-                "3.Booking Room\n"
+                "3.Booking Room\n" +
+                "4.Back To Menu\n"
                 + "---------------------");
         System.out.print("Nhập chọn:");
         int input = Integer.parseInt(scanner.nextLine());
@@ -527,6 +544,12 @@ public class MainController {
             case 3:
                 BookingVRoom();
                 displayMenu();
+                break;
+            case 4:
+                displayMenu();
+                break;
+            default:
+                System.out.println("Vui lòng nhập từ 1 -4");
                 break;
 
         }
@@ -544,7 +567,7 @@ public class MainController {
         showAllHouse();
         System.out.print("Chọn house bạn muốn đặt:");
         int chooseHouse = Integer.parseInt(scanner.nextLine());
-        listCustomer.get(chooseTheCustomer - 1).setServices(listVilla.get(chooseHouse - 1));
+        listCustomer.get(chooseTheCustomer - 1).setServices(listHouse.get(chooseHouse - 1));
         AddFileCus(chooseTheCustomer);
     }
 
@@ -552,7 +575,7 @@ public class MainController {
         showAllRoom();
         System.out.print("Chọn room bạn muốn đặt:");
         int chooseRoom = Integer.parseInt(scanner.nextLine());
-        listCustomer.get(chooseTheCustomer - 1).setServices(listVilla.get(chooseRoom - 1));
+        listCustomer.get(chooseTheCustomer - 1).setServices(listRoom.get(chooseRoom - 1));
         AddFileCus(chooseTheCustomer);
     }
 
@@ -579,6 +602,206 @@ public class MainController {
     /**
      * END BOOKING
      **/
+
+
+    /**
+     * EMPLOYEE
+     **/
+
+    public static void addEmployee() {
+        System.out.print("Vui lòng nhập id:");
+        String id = scanner.nextLine();
+        System.out.print("Vui lòng nhập tên:");
+        String name = scanner.nextLine();
+        System.out.print("Vui lòng nhập ngày sinh:");
+        String dateOfBirth = scanner.nextLine();
+        System.out.print("Vui lòng nhập CMND:");
+        int idCard = Integer.parseInt(scanner.nextLine());
+        System.out.print("Vui lòng nhập điện thoại:");
+        int numberPhone = Integer.parseInt(scanner.nextLine());
+        System.out.print("Vui lòng nhập email:");
+        String email = scanner.nextLine();
+        System.out.print("Vui lòng nhập trình độ:");
+        String academicLevel = scanner.nextLine();
+        System.out.print("Vui lòng nhập địa chỉ:");
+        String location = scanner.nextLine();
+        System.out.print("Vui lòng nhập lương:");
+        int salary = Integer.parseInt(scanner.nextLine());
+
+        Employee employee = new Employee(id, name, dateOfBirth, idCard, numberPhone, email, academicLevel, location, salary);
+        listEmployeeArray.add(employee);
+
+        String line = null;
+        line = employee.getIdEmployee()
+                + COMMA + employee.getNameEmployee()
+                + COMMA + employee.getDateOfBirth()
+                + COMMA + employee.getIdentityCardNumber()
+                + COMMA + employee.getNumberOfPhone()
+                + COMMA + employee.getEmail()
+                + COMMA + employee.getAcademicLevel()
+                + COMMA + employee.getLocation()
+                + COMMA + employee.getSalary();
+        FileUtils.writeFile(FILE_NAME_EMPLOYEE, line);
+    }
+
+    public static void showEmployee() {
+        List<String> listEmployee = FileUtils.readFile(FILE_NAME_EMPLOYEE);
+        for (String employee : listEmployee) {
+            String[] split = employee.split(",");
+            if (split.length != 1) {
+                Employee employee1 = new Employee(split[0], split[1], split[2], Integer.parseInt(split[3]), Integer.parseInt(split[4])
+                        , split[5], split[6], split[7], Integer.parseInt(split[8]));
+                listEmployeeMap.put(split[0], employee1);
+                listStack.push(employee1);
+            }
+        }
+
+    }
+
+    public static void showInformationOfEmployee() {
+        showEmployee();
+        for (String key : listEmployeeMap.keySet()) {
+            System.out.println(key + " " + listEmployeeMap.get(key));
+        }
+    }
+    public static void employeeProfileSearch(){
+        int size = listStack.size();
+        boolean flag = false;
+        System.out.print("Nhập tên bạn muốn tìm hoặc id:");
+        String input = scanner.nextLine();
+        for (int i = 0; i < size; i++){
+            if (listStack.peek().getIdEmployee().equals(input)){ //001
+                System.out.println(listStack.pop());
+                flag = true;
+                continue;
+            }
+            listStack.pop();
+        }
+        if (!flag) {
+            System.err.println("Không có nhân viên bạn muốn tìm");
+        }
+
+    }
+    /**
+     * END EMPLOYEE
+     **/
+
+
+    /**
+     * MOVIE 4D
+     **/
+    public static void menuShow4DMovieViewers() {
+        System.out.println("----------------------" + "\n"
+                + "1.Mua vé" + "\n"
+                + "2.Danh sách mua vé" + "\n"
+                + "3.Back to menu" + "\n"
+                + "--------------------------");
+        System.out.print("Nhập chọn:");
+        int input = Integer.parseInt(scanner.nextLine());
+        switch (input) {
+            case 1:
+                showInformationCustomers();
+                buyMovieTickets();
+                menuShow4DMovieViewers();
+                break;
+            case 2:
+                show4DMovieViewers();
+                menuShow4DMovieViewers();
+                break;
+            case 3:
+                displayMenu();
+                break;
+            default:
+                System.out.println("Vui lòng chọn từ 1 - 3");
+                break;
+
+        }
+    }
+
+    public static void buyMovieTickets() {
+        try {
+            System.out.print("Vui lòng chọn khách hàng:");
+            int chooseTheCustomer = Integer.parseInt(scanner.nextLine());
+            listQueue.add(listCustomer.get(chooseTheCustomer - 1));
+        } catch (IndexOutOfBoundsException e) {
+            System.err.println("Vui lòng chọn trong danh sách");
+        }
+
+    }
+
+    public static void show4DMovieViewers() {
+        int size = listQueue.size();
+        if (size == 0) {
+            System.err.println("Chưa có khách hàng nào");
+        }
+        for (int i = 0; i < size; i++) {
+            System.out.println(listQueue.poll().getNameCustomer());
+        }
+    }
+    /**
+     * END MOVIE 4D
+     **/
+
+    /**
+     * MENU
+     **/
+    public static void displayMenu() {
+        System.out.println("---------------------------" + "\n"
+                + "1.Add New Services" + "\n"
+                + "2.Show Services" + "\n"
+                + "3.Add New Customer" + "\n"
+                + "4.Show Information of Customer" + "\n"
+                + "5.Add New Booking" + "\n"
+                + "6.Add New Employee" + "\n"
+                + "7.Show Information of Employee" + "\n"
+                + "8.Show 4D Movie Viewers" + "\n"
+                + "9.Search Profile Employee" + "\n"
+                + "10.Exit" + "\n"
+                + "---------------------------");
+        System.out.print("Vui lòng chọn:");
+        int input = Integer.parseInt(scanner.nextLine());
+        switch (input) {
+            case 1:
+                menuAdd();
+                displayMenu();
+                break;
+            case 2:
+                showServices();
+                displayMenu();
+                break;
+            case 3:
+                addCutomer();
+                displayMenu();
+                break;
+            case 4:
+                showInformationCustomers();
+                displayMenu();
+                break;
+            case 5:
+                addNewBooking();
+                displayMenu();
+                break;
+            case 6:
+                addEmployee();
+                displayMenu();
+                break;
+            case 7:
+                showInformationOfEmployee();
+                displayMenu();
+                break;
+            case 8:
+                menuShow4DMovieViewers();
+                displayMenu();
+                break;
+            case 9:
+                employeeProfileSearch();
+                displayMenu();
+                break;
+            default:
+                System.out.println("Vui lòng nhập từ 1-9");
+        }
+    }
+
     public static void menuAdd() {
         System.out.println("-----------------------\n" +
                 "1.\tAdd New Villa\n" +
@@ -608,7 +831,9 @@ public class MainController {
             default:
                 System.out.println("vui lòng nhập từ 1 - 4");
                 break;
-
         }
     }
+    /**
+     * END MENU
+     **/
 }
