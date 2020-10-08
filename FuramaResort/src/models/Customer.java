@@ -1,10 +1,10 @@
 package models;
 
-public class Customer implements Comparable<Customer>{
+public class Customer implements Comparable<Customer> {
     private String idCustomer;
     private String nameCustomer;
     private String dateOfBirth;
-    private String sex;
+    private String gender;
     private int identityCardNumber;
     private int numberPhone;
     private String email;
@@ -12,11 +12,11 @@ public class Customer implements Comparable<Customer>{
     private String address;
     private Services services;
 
-    public Customer(String idCustomer, String nameCustomer, String dateOfBirth, String sex, int identityCardNumber, int numberPhone, String email, String typeOfCustomer, String address, Services services) {
+    public Customer(String idCustomer, String nameCustomer, String dateOfBirth, String gender, int identityCardNumber, int numberPhone, String email, String typeOfCustomer, String address, Services services) {
         this.idCustomer = idCustomer;
         this.nameCustomer = nameCustomer;
         this.dateOfBirth = dateOfBirth;
-        this.sex = sex;
+        this.gender = gender;
         this.identityCardNumber = identityCardNumber;
         this.numberPhone = numberPhone;
         this.email = email;
@@ -52,12 +52,12 @@ public class Customer implements Comparable<Customer>{
         this.dateOfBirth = dateOfBirth;
     }
 
-    public String getSex() {
-        return sex;
+    public String getGender() {
+        return gender;
     }
 
-    public void setSex(String sex) {
-        this.sex = sex;
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 
     public int getIdentityCardNumber() {
@@ -110,11 +110,10 @@ public class Customer implements Comparable<Customer>{
 
     @Override
     public String toString() {
-        return
-                "IdCustomer : " + idCustomer + "\n" +
+        return "IdCustomer : " + idCustomer + "\n" +
                 "NameCustomer : " + nameCustomer + "\n" +
                 "DateOfBirth : " + dateOfBirth + "\n" +
-                "Sex : " + sex + "\n" +
+                "Sex : " + gender + "\n" +
                 "IdentityCardNumber : " + identityCardNumber + "\n" +
                 "NumberPhone : " + numberPhone + "\n" +
                 "Email : " + email + "\n" +
@@ -130,8 +129,8 @@ public class Customer implements Comparable<Customer>{
     @Override
     public int compareTo(Customer o) {
         int result = this.getNameCustomer().compareTo(o.getNameCustomer());
-        if (result == 0){
-            result = this.getDateOfBirth().substring(6,10).compareTo(o.getDateOfBirth().substring(6,10));
+        if (result == 0) {
+            result = this.getDateOfBirth().substring(6, 10).compareTo(o.getDateOfBirth().substring(6, 10));
         }
         return result;
     }
