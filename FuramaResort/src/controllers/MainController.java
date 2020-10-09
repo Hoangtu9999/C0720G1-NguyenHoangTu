@@ -26,7 +26,6 @@ public class MainController {
     public static ArrayList<Employee> listEmployeeArray = new ArrayList();
     public static Map<String, Employee> listEmployeeMap = new TreeMap<>();
     public static Queue<Customer> listQueue = new LinkedList<>();
-    public static Stack<Employee> listStack = new Stack<>();
 
 
     public static final String FILE_NAME_VILLA = "src/data/Villa.csv";
@@ -517,13 +516,41 @@ public class MainController {
     /**
      * BOOKING
      **/
+    public static void exceptionIndexCusTomer(int choiceCustomer) throws IndexOutOfBoundsException {
+        if (choiceCustomer < 1 || choiceCustomer > listCustomer.size())
+            throw new IndexOutOfBoundsException("Vui lòng chọn trong danh sách");
+    }
+    public static void exceptionIndexVilla(int choiceCustomer) throws IndexOutOfBoundsException {
+        if (choiceCustomer < 1 || choiceCustomer > listVilla.size())
+            throw new IndexOutOfBoundsException("Vui lòng chọn trong danh sách");
+    }
+    public static void exceptionIndexHouse(int choiceCustomer) throws IndexOutOfBoundsException {
+        if (choiceCustomer < 1 || choiceCustomer > listHouse.size())
+            throw new IndexOutOfBoundsException("Vui lòng chọn trong danh sách");
+    }
+    public static void exceptionIndexRoom(int choiceCustomer) throws IndexOutOfBoundsException {
+        if (choiceCustomer < 1 || choiceCustomer > listRoom.size())
+            throw new IndexOutOfBoundsException("Vui lòng chọn trong danh sách");
+    }
 
     public static void addNewBooking() {
         int choose = 1;
         do {
-            showInformationCustomers();
-            System.out.print("Vui lòng chọn khách hàng:");
-            chooseTheCustomer = Integer.parseInt(scanner.nextLine());
+            boolean flag = false;
+            do {
+                try {
+                    listCustomer = new ArrayList<>();
+                    flag = true;
+                    showInformationCustomers();
+                    System.out.print("Vui lòng chọn khách hàng:");
+                    chooseTheCustomer = Integer.parseInt(scanner.nextLine());
+                    exceptionIndexCusTomer(chooseTheCustomer);
+                } catch (IndexOutOfBoundsException e) {
+                    flag = false;
+                    System.err.println(e.getMessage());
+                }
+            } while (!flag);
+
             System.out.println("---------------------" + "\n" +
                     "1.Booking Villa\n" +
                     "2.Booking House\n" +
@@ -540,7 +567,7 @@ public class MainController {
                     bookingHouse();
                     break;
                 case 3:
-                    bookingVRoom();
+                    bookingRoom();
                     break;
                 case 4:
                     displayMenu();
@@ -556,26 +583,71 @@ public class MainController {
 
     public static void bookingVilla() {
         showAllVilla();
-        System.out.print("Chọn villa bạn muốn đặt:");
-        int chooseVilla = Integer.parseInt(scanner.nextLine());
+        int chooseVilla = 0;
+        boolean flag = false;
+        do {
+            try {
+                flag = true;
+                System.out.print("Chọn villa bạn muốn đặt:");
+                chooseVilla = Integer.parseInt(scanner.nextLine());
+                exceptionIndexVilla(chooseVilla);
+            } catch (IndexOutOfBoundsException e) {
+                flag = false;
+                System.err.println(e.getMessage());
+            }
+        } while (!flag);
+
+
         listCustomer.get(chooseTheCustomer - 1).setServices(listVilla.get(chooseVilla - 1));
         addFileCustomer(chooseTheCustomer);
+        System.err.println("Thêm booking villa thành công");
+        displayMenu();
     }
 
     public static void bookingHouse() {
         showAllHouse();
-        System.out.print("Chọn house bạn muốn đặt:");
-        int chooseHouse = Integer.parseInt(scanner.nextLine());
+        int chooseHouse = 0;
+        boolean flag = false;
+
+        do {
+            try {
+                flag = true;
+                System.out.print("Chọn villa bạn muốn đặt:");
+                chooseHouse = Integer.parseInt(scanner.nextLine());
+                exceptionIndexHouse(chooseHouse);
+            } catch (IndexOutOfBoundsException e) {
+                flag = false;
+                System.err.println(e.getMessage());
+            }
+        } while (!flag);
+
         listCustomer.get(chooseTheCustomer - 1).setServices(listHouse.get(chooseHouse - 1));
         addFileCustomer(chooseTheCustomer);
+        System.err.println("Thêm booking house thành công");
+        displayMenu();
     }
 
-    public static void bookingVRoom() {
+    public static void bookingRoom() {
         showAllRoom();
-        System.out.print("Chọn room bạn muốn đặt:");
-        int chooseRoom = Integer.parseInt(scanner.nextLine());
+        int chooseRoom = 0;
+        boolean flag = false;
+        do {
+            try {
+                flag = true;
+                System.out.print("Chọn room bạn muốn đặt:");
+                chooseRoom = Integer.parseInt(scanner.nextLine());
+
+                exceptionIndexRoom(chooseRoom);
+            } catch (IndexOutOfBoundsException e) {
+                flag = false;
+                System.err.println(e.getMessage());
+            }
+        } while (!flag);
+
         listCustomer.get(chooseTheCustomer - 1).setServices(listRoom.get(chooseRoom - 1));
         addFileCustomer(chooseTheCustomer);
+        System.err.println("Thêm booking room thành công");
+        displayMenu();
     }
 
     public static void addFileCustomer(int chooseTheCustomer) {
@@ -673,7 +745,6 @@ public class MainController {
                 Employee employee1 = new Employee(split[0], split[1], split[2], Integer.parseInt(split[3]), Integer.parseInt(split[4])
                         , split[5], split[6], split[7], Integer.parseInt(split[8]));
                 listEmployeeMap.put(split[0], employee1);
-                listStack.push(employee1);
             }
         }
 
@@ -686,24 +757,7 @@ public class MainController {
         }
     }
 
-    public static void employeeProfileSearch() {
-        int size = listStack.size();
-        boolean flag = false;
-        System.out.print("Nhập tên bạn muốn tìm hoặc id:");
-        String input = scanner.nextLine();
-        for (int i = 0; i < size; i++) {
-            if (listStack.peek().getIdEmployee().equals(input)) { //001
-                System.out.println(listStack.pop());
-                flag = true;
-                continue;
-            }
-            listStack.pop();
-        }
-        if (!flag) {
-            System.err.println("Không có nhân viên bạn muốn tìm");
-        }
 
-    }
     /**
      * END EMPLOYEE
      **/
@@ -813,7 +867,7 @@ public class MainController {
                     menuShow4DMovieViewers();
                     break;
                 case 9:
-                    employeeProfileSearch();
+                    FilingCabinets.employeeProfileSearch();
                     break;
                 default:
                     System.out.println("Vui lòng nhập từ 1-9");
