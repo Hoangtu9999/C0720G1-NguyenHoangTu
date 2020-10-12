@@ -778,7 +778,6 @@ public class MainController {
             int input = Integer.parseInt(scanner.nextLine());
             switch (input) {
                 case 1:
-                    showInformationCustomers();
                     buyMovieTickets();
                     break;
                 case 2:
@@ -797,6 +796,7 @@ public class MainController {
     }
 
     public static void buyMovieTickets() {
+        showInformationCustomers();
         try {
             System.out.print("Vui lòng chọn khách hàng:");
             int chooseTheCustomer = Integer.parseInt(scanner.nextLine());
